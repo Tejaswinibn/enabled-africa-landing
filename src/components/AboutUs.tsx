@@ -4,11 +4,11 @@ import { OurValues } from "./ValueBadge";
 export default function AboutUs() {
   return (
     <>
-      <section id="about-us" className="bg-[#FFE8B9] py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10">
+      <section id="about-us" className="bg-[#FFE8B9] py-10 sm:py-14 lg:py-18">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
 
           {/* About Enabled Africa Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 mb-12 sm:mb-16 lg:mb-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-10 sm:mb-14 lg:mb-18 items-center">
             {/* Image */}
             <div className="overflow-hidden rounded-2xl shadow-[0_12px_32px_-12px_rgba(0,0,0,0.1)] lg:order-1">
               <Image
@@ -16,20 +16,20 @@ export default function AboutUs() {
                 alt="Portrait"
                 width={400}
                 height={500}
-                className="w-full h-[260px] sm:h-[300px] md:h-[420px] object-cover"
+                className="w-full h-[220px] sm:h-[260px] md:h-[320px] lg:h-[380px] object-cover"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 700px"
               />
             </div>
 
             {/* Text Content */}
             <div className="lg:order-2 text-center lg:text-left">
-              <h2 className="text-[26px] sm:text-[30px] font-bold text-gray-800 mb-3 sm:mb-4" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, lineHeight: '1.2', letterSpacing: '0%' }}>
+              <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold text-gray-800 mb-4 sm:mb-6" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, lineHeight: '1.2', letterSpacing: '0%' }}>
                 About<br />Enabled Africa
               </h2>
-              <p className="text-[15px] leading-7 text-gray-600 mb-3">
+              <p className="text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-gray-600 mb-4">
                 Ability is everywhere. Opportunity should be too
               </p>
-              <p className="text-[15px] leading-7 text-gray-700 max-w-[52ch] mx-auto lg:mx-0">
+              <p className="text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-gray-700 max-w-[48ch] sm:max-w-[52ch] mx-auto lg:mx-0">
                 EnabledAfrica is building a continent-wide platform that connects
                 people with opportunities and helps organizations grow stronger
                 through talent.
@@ -58,7 +58,7 @@ export default function AboutUs() {
                   alt="Vision image"
                   width={400}
                   height={300}
-                  className="w-full h-[260px] sm:h-[300px] md:h-[420px] object-cover"
+                  className="w-full h-[220px] sm:h-[260px] md:h-[320px] lg:h-[380px] object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 700px"
                 />
               </div>
@@ -73,7 +73,7 @@ export default function AboutUs() {
                   alt="Mission image"
                   width={400}
                   height={300}
-                  className="w-full h-[260px] sm:h-[300px] md:h-[420px] object-cover"
+                  className="w-full h-[220px] sm:h-[260px] md:h-[320px] lg:h-[380px] object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 700px"
                 />
               </div>
@@ -92,10 +92,10 @@ export default function AboutUs() {
           </div>
 
         </div>
-        
-        {/* Our Values Section */}
-        <OurValues />
       </section>
+      
+      {/* Our Values Section - Outside the beige section */}
+      <OurValues />
     </>
   );
 }
