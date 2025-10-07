@@ -5,6 +5,7 @@ import PromotionalBanner from '@/components/PromotionalBanner'
 import WhatYouGet from '@/components/WhatYouGet'
 import AboutUs from '@/components/AboutUs'
 import OurStory from '@/components/OurStory'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
         {/* Our Story Section */}
         <OurStory />
       </main>
+      <Footer />
     </>
   )
 }
