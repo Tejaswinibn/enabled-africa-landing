@@ -55,7 +55,7 @@ export default function ConnectionSection() {
           </div>
           
           {/* Right Text Box */}
-          <div className="absolute top-1/2 right-0 sm:top-1/2 sm:right-0 transform -translate-y-1/2 z-10 max-w-sm sm:max-w-md">
+          <div className="absolute top-1/2 right-4 sm:top-1/2 sm:right-6 lg:top-1/2 lg:right-8 transform -translate-y-1/2 z-10 max-w-sm sm:max-w-md">
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
               We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
             </p>
