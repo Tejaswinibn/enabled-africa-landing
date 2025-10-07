@@ -3,31 +3,32 @@ import Image from "next/image";
 
 export default function ConnectionSection() {
   return (
-    <section className="pt-12 sm:pt-16 lg:pt-20 pb-0 bg-white -mb-6 sm:-mb-8 lg:-mb-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
-        <div className="relative h-[400px] sm:h-[500px] lg:h-[800px]">
-          {/* Left Text */}
-          <div className="absolute top-4 left-4 sm:top-6 sm:left-6 lg:top-12 lg:left-8 z-10 max-w-sm sm:max-w-md">
-            <h2 className="text-gray-800 text-lg sm:text-xl lg:text-2xl font-semibold leading-tight">
+    <section className="pt-14 sm:pt-20 md:pt-24 pb-0 bg-white -mb-6 sm:-mb-8 lg:-mb-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10">
+        <div className="relative h-[520px] md:h-[600px]">
+          {/* Left Text - Mobile optimized */}
+          <div className="absolute top-[6%] left-[4%] z-10 max-w-[22ch]">
+            <h2 className="text-[22px] sm:text-[28px] font-semibold leading-tight text-gray-800">
               Enabled Africa connects<br />
               people and opportunities<br />
               across the continent
             </h2>
           </div>
 
-          {/* Africa Map - positioned more to the right */}
-          <div className="absolute top-1/3 right-1/4 sm:right-1/3 transform -translate-y-1/2 z-5">
+          {/* Africa Map - Mobile centered */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
             <Image
               src="/images/Vector.png"
               alt="Africa Map"
               width={400}
               height={400}
-              className="w-48 h-48 sm:w-64 sm:h-64 lg:w-120 lg:h-120 object-contain"
+              className="w-[78vw] max-w-[560px] h-auto object-contain"
+              sizes="(max-width: 640px) 78vw, (max-width: 1024px) 60vw, 560px"
             />
           </div>
           
-          {/* Connecting Lines Overlay - full width */}
-          <div className="absolute top-1/3 left-0 right-0 bottom-0 transform -translate-y-1/2 z-5">
+          {/* Connecting Lines Overlay - Mobile optimized */}
+          <div className="absolute left-[-10%] right-[-10%] top-[20%] h-[60%] z-5">
             <Image
               src="/images/Vector 4504.png"
               alt="Connecting Lines"
@@ -37,26 +38,26 @@ export default function ConnectionSection() {
             />
           </div>
           
-          {/* Profile Images - positioned along the gradient line, moved right */}
-          <div className="absolute top-4 left-16 sm:top-6 sm:left-20 lg:top-8 lg:left-88 z-10">
-            <Image src="/images/Ellipse 4344.png" alt="Profile 3" width={50} height={50} className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full" />
+          {/* Profile Images - Mobile sizes */}
+          <div className="absolute top-[6%] left-[4%] z-10">
+            <Image src="/images/Ellipse 4344.png" alt="Profile 3" width={64} height={64} className="h-[64px] w-[64px] rounded-full" />
           </div>
-          <div className="absolute top-[45%] left-[40%] sm:left-[45%] lg:left-[56%] z-10">
-            <Image src="/images/Ellipse 4345.png" alt="Profile 4" width={50} height={50} className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full" />
+          <div className="absolute top-[20%] right-[4%] z-10">
+            <Image src="/images/Ellipse 4343.png" alt="Profile 2" width={64} height={64} className="h-[64px] w-[64px] rounded-full" />
           </div>
-          <div className="absolute top-24 left-12 sm:top-36 sm:left-16 lg:top-84 lg:left-72 z-10">
-            <Image src="/images/Ellipse 4346.png" alt="Profile 5" width={60} height={60} className="w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full" />
+          <div className="absolute top-[45%] left-[50%] transform -translate-x-1/2 z-10">
+            <Image src="/images/Ellipse 4345.png" alt="Profile 4" width={80} height={80} className="h-[80px] w-[80px] rounded-full" />
           </div>
-          <div className="absolute top-12 right-6 sm:top-16 sm:right-10 lg:top-20 lg:right-36 z-10">
-            <Image src="/images/Ellipse 4343.png" alt="Profile 2" width={50} height={50} className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full" />
+          <div className="absolute bottom-[20%] left-[4%] z-10">
+            <Image src="/images/Ellipse 4342.png" alt="Profile 1" width={56} height={56} className="h-[56px] w-[56px] rounded-full" />
           </div>
-          <div className="absolute top-20 left-6 sm:top-28 sm:left-12 lg:top-52 lg:left-48 z-10">
-            <Image src="/images/Ellipse 4342.png" alt="Profile 1" width={50} height={50} className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full" />
+          <div className="absolute bottom-[10%] right-[4%] z-10">
+            <Image src="/images/Ellipse 4346.png" alt="Profile 5" width={56} height={56} className="h-[56px] w-[56px] rounded-full" />
           </div>
           
-          {/* Right Text Box */}
-          <div className="absolute top-1/2 right-0 sm:top-1/2 sm:right-0 transform -translate-y-1/2 z-10 max-w-sm sm:max-w-md">
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+          {/* Right Text Box - Mobile positioned below map */}
+          <div className="absolute top-[54%] left-[4%] right-[4%] md:top-1/2 md:right-0 md:left-auto md:transform md:-translate-y-1/2 z-10 max-w-[60ch]">
+            <p className="text-gray-700 text-[15px] leading-7">
               We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
             </p>
           </div>
