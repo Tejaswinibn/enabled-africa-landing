@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhatYouGet() {
   return (
     <section id="what-you-get" className="py-20 sm:py-24 bg-white">
@@ -13,9 +15,11 @@ export default function WhatYouGet() {
                   What<br />You Get
                 </h2>
                 <div className="flex-1 flex items-end">
-                  <img 
+                  <Image 
                     src="/images/Group 1171276410.png" 
                     alt="Document illustration" 
+                    width={200}
+                    height={320}
                     className="w-full h-80 object-cover rounded-xl"
                   />
                 </div>
@@ -23,9 +27,11 @@ export default function WhatYouGet() {
               
               {/* Large Person Image */}
               <div className="flex-1">
-                <img 
+                <Image 
                   src="/images/young-businessman-explaining-his-colleague-wheelchair-online-information.png" 
                   alt="Professional person" 
+                  width={400}
+                  height={500}
                   className="w-full h-auto rounded-xl"
                 />
               </div>
@@ -136,9 +142,11 @@ export default function WhatYouGet() {
               style={{ backgroundColor: '#045F33' }}
             >
               <div className="absolute top-4 right-4">
-                <img 
+                <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -148,9 +156,11 @@ export default function WhatYouGet() {
 
             {/* Card 2 - Image - diverse-multiracial-group */}
             <div className="min-h-[280px] p-4">
-              <img 
+              <Image 
                 src="/images/diverse-multiracial-group-people-giving-high-five-modern-office-teamwork-concept.png" 
                 alt="Team in office" 
+                width={300}
+                height={280}
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
@@ -161,9 +171,11 @@ export default function WhatYouGet() {
               style={{ backgroundColor: '#EFC36B' }}
             >
               <div className="absolute top-4 right-4">
-                <img 
+                <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -173,18 +185,22 @@ export default function WhatYouGet() {
 
             {/* Card 4 - Image - MicrosoftTeams */}
             <div className="min-h-[280px] p-4">
-              <img 
+              <Image 
                 src="/images/645bd6210b74564994a286d7_MicrosoftTeams-image (1).png" 
                 alt="Man in striped shirt" 
+                width={300}
+                height={280}
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
 
             {/* Card 5 - Image - istock-2160995080 */}
             <div className="min-h-[280px] p-4">
-              <img 
+              <Image 
                 src="/images/istock-2160995080.png" 
                 alt="Team collaboration" 
+                width={300}
+                height={280}
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
@@ -195,9 +211,11 @@ export default function WhatYouGet() {
               style={{ backgroundColor: '#EFC36B' }}
             >
               <div className="absolute top-4 right-4">
-                <img 
+                <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -207,9 +225,11 @@ export default function WhatYouGet() {
 
             {/* Card 7 - Image - Placeholder for another image */}
             <div className="min-h-[280px] p-4">
-              <img 
+              <Image 
                 src="/images/financial-businesswomen-analyze-the-graph-of-the-c-2025-02-22-17-12-16-utc.png" 
                 alt="Woman with laptop" 
+                width={300}
+                height={280}
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
@@ -220,9 +240,11 @@ export default function WhatYouGet() {
               style={{ backgroundColor: '#045F33' }}
             >
               <div className="absolute top-4 right-4">
-                <img 
+                <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>

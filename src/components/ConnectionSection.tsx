@@ -1,4 +1,6 @@
 
+import Image from "next/image";
+
 export default function ConnectionSection() {
   return (
     <section className="pt-20 pb-0 bg-white -mb-16">
@@ -21,37 +23,41 @@ export default function ConnectionSection() {
 
           {/* Africa Map - positioned more to the right */}
           <div className="absolute top-1/3 right-1/3 transform -translate-y-1/2 z-5">
-            <img
+            <Image
               src="/images/Vector.png"
               alt="Africa Map"
+              width={400}
+              height={400}
               className="w-120 h-120 object-contain"
             />
           </div>
           
           {/* Connecting Lines Overlay - full width */}
           <div className="absolute top-1/3 left-0 right-0 bottom-0 transform -translate-y-1/2 z-5">
-            <img
+            <Image
               src="/images/Vector 4504.png"
               alt="Connecting Lines"
+              width={1200}
+              height={600}
               className="w-full h-full object-contain"
             />
           </div>
           
           {/* Profile Images - positioned along the gradient line, moved right */}
           <div className="absolute top-8 left-88 z-10">
-            <img src="/images/Ellipse 4344.png" alt="Profile 3" className="w-20 h-20 rounded-full" />
+            <Image src="/images/Ellipse 4344.png" alt="Profile 3" width={80} height={80} className="w-20 h-20 rounded-full" />
           </div>
           <div className="absolute top-[45%] left-[56%] z-10">
-            <img src="/images/Ellipse 4345.png" alt="Profile 4" className="w-20 h-20 rounded-full" />
+            <Image src="/images/Ellipse 4345.png" alt="Profile 4" width={80} height={80} className="w-20 h-20 rounded-full" />
           </div>
           <div className="absolute top-84 left-72 z-10">
-            <img src="/images/Ellipse 4346.png" alt="Profile 5" className="w-24 h-24 rounded-full" />
+            <Image src="/images/Ellipse 4346.png" alt="Profile 5" width={96} height={96} className="w-24 h-24 rounded-full" />
           </div>
           <div className="absolute top-20 right-36 z-10">
-            <img src="/images/Ellipse 4343.png" alt="Profile 2" className="w-20 h-20 rounded-full" />
+            <Image src="/images/Ellipse 4343.png" alt="Profile 2" width={80} height={80} className="w-20 h-20 rounded-full" />
           </div>
           <div className="absolute top-52 left-48 z-10">
-            <img src="/images/Ellipse 4342.png" alt="Profile 1" className="w-20 h-20 rounded-full" />
+            <Image src="/images/Ellipse 4342.png" alt="Profile 1" width={80} height={80} className="w-20 h-20 rounded-full" />
           </div>
           
           {/* Right Text Box */}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { OurValues } from "./ValueBadge";
 
 export default function AboutUs() {
@@ -10,9 +11,11 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 items-center">
             {/* Image */}
             <div className="overflow-hidden rounded-2xl shadow-[0_12px_32px_-12px_rgba(0,0,0,0.1)] lg:order-1">
-              <img
+              <Image
                 src="/images/Group 1171276405.png"
                 alt="Portrait"
+                width={400}
+                height={500}
                 className="w-3/5 h-auto mx-auto"
               />
             </div>
@@ -49,9 +52,11 @@ export default function AboutUs() {
               </div>
               {/* Vision Image - Right */}
               <div className="overflow-hidden rounded-2xl shadow-[0_12px_32px_-12px_rgba(0,0,0,0.1)] lg:order-2">
-                <img
+                <Image
                   src="/images/Subtract.png"
                   alt="Vision image"
+                  width={400}
+                  height={300}
                   className="w-3/5 h-auto mx-auto"
                 />
               </div>
@@ -61,9 +66,11 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Mission Image - Left */}
               <div className="overflow-hidden rounded-2xl shadow-[0_12px_32px_-12px_rgba(0,0,0,0.1)] lg:order-1">
-                <img
+                <Image
                   src="/images/Group 1171276409.png"
                   alt="Mission image"
+                  width={400}
+                  height={300}
                   className="w-3/5 h-auto mx-auto"
                 />
               </div>
