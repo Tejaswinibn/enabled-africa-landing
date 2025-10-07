@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -6,12 +8,12 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-10 py-2 sm:py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <img 
             src="/images/story-image.png" 
             alt="Enabled Africa Logo" 
-            className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 object-contain"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-28 lg:h-28 object-contain"
           />
         </Link>
         
