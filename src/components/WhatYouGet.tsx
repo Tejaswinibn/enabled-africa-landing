@@ -123,7 +123,7 @@ export default function WhatYouGet() {
             Why Employers Choose Us
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Hire Africa's Best Talent. Build Stronger Teams.<br />
+            Hire Africa&apos;s Best Talent. Build Stronger Teams.<br />
             A trusted way to connect with skilled and motivated candidates.
           </p>
         </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 export default function ConnectionSection() {
   return (
@@ -58,7 +57,7 @@ export default function ConnectionSection() {
           {/* Right Text Box */}
           <div className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10 max-w-sm">
             <p className="text-gray-700 text-sm leading-relaxed">
-              We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you're a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
+              We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
             </p>
           </div>
         </div>

@@ -26,8 +26,8 @@ export default function PromotionalBanner() {
                 
                 {/* Main Text */}
                 <h2 className="text-3xl font-bold text-white mb-6 leading-tight">
-                  Join as Talent or Employer<br />
-                  and be part of Africa's future
+                Join as Talent or Employer<br />
+                and be part of Africa&apos;s future
                 </h2>
                 
                 {/* CTA Button */}

@@ -71,7 +71,7 @@ export default function AboutUs() {
               <div className="lg:order-2">
                 <h3 className="font-semibold text-gray-800 mb-3" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 600, fontSize: '25px', lineHeight: '44.4px', letterSpacing: '0%' }}>Our Mission</h3>
                 <p className="text-gray-700 text-base mb-6">
-                  To unlock Africa's full potential by making access to work, skills,
+                  To unlock Africa&apos;s full potential by making access to work, skills,
                   and growth opportunities simple, fair, and inclusive for all
                 </p>
                 <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">

@@ -26,7 +26,7 @@ export default function Footer() {
             <nav className="md:col-span-2">
               <h3 className="mb-3 text-sm font-semibold text-zinc-300">Company</h3>
               <ul className="space-y-2 text-sm text-zinc-400">
-                <li><a href="/" className="hover:text-orange-500">Home</a></li>
+                <li><Link href="/" className="hover:text-orange-500">Home</Link></li>
                 <li><a href="#about-us" className="hover:text-orange-500">About us</a></li>
               </ul>
             </nav>

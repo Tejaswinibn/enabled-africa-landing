@@ -47,7 +47,7 @@ export default function OurStory() {
           <div className="lg:col-span-4 self-end lg:mt-16 lg:pl-6">
             <p className="text-base leading-7 text-zinc-700 mb-6 max-w-[36ch]">
               Today, with partners across the continent and globally, we are
-              shaping a new future for Africa's workforce – one that works for
+              shaping a new future for Africa&apos;s workforce – one that works for
               everyone.
             </p>
             <a

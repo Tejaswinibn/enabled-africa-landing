@@ -19,7 +19,7 @@ export default function Home() {
                   <div className="mx-auto max-w-7xl px-6 md:px-10 w-full">
                     <div className="max-w-2xl ml-8">
                       <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
-                        Africa's<br />
+                        Africa&apos;s<br />
                         Largest Talent<br />
                         Bank
                       </h1>
