@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="relative isolate py-20 sm:py-24">
+    <section className="relative isolate py-12 sm:py-16 lg:py-20">
       {/* Centered container for everything, including ribbon */}
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         {/* Ribbon underlay positioned to this container only */}
         <div aria-hidden="true" className="pointer-events-none relative -z-10">
           <Image
@@ -12,18 +12,18 @@ export default function OurStory() {
             alt=""
             width={2400}
             height={600}
-            className="absolute left-[0%] right-[-24%] top-8 h-[320px] w-[240%] object-contain opacity-85"
+            className="absolute left-[0%] right-[-24%] top-4 sm:top-8 h-[200px] sm:h-[280px] lg:h-[320px] w-[240%] object-contain opacity-85"
             priority
           />
         </div>
 
-        <div className="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-12 lg:gap-x-12">
+        <div className="grid grid-cols-1 items-center gap-y-6 sm:gap-y-8 lg:gap-y-10 lg:grid-cols-12 lg:gap-x-12">
           {/* Left text — force to top-left and closer to image */}
-          <div className="lg:col-span-4 self-start lg:-mt-12 lg:pr-6">
-            <h2 className="text-4xl font-semibold tracking-tight text-zinc-900 mb-4">
+          <div className="lg:col-span-4 self-start lg:-mt-12 lg:pr-6 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-900 mb-3 sm:mb-4">
               Our Story
             </h2>
-            <p className="text-base leading-7 text-zinc-700 max-w-[32ch]">
+            <p className="text-sm sm:text-base leading-6 sm:leading-7 text-zinc-700 max-w-[32ch] mx-auto lg:mx-0">
               Enabled Africa began in 2025 with a simple idea: talent is
               everywhere, but not everyone has access to opportunity.
             </p>
@@ -37,22 +37,22 @@ export default function OurStory() {
                 alt="Disabled woman working on laptop"
                 width={520}
                 height={640}
-                className="h-[440px] md:h-[460px] w-full object-cover"
+                className="h-[300px] sm:h-[400px] md:h-[460px] w-full object-cover"
                 priority
               />
             </div>
           </div>
 
           {/* Right text + CTA — push to bottom-right and away from image */}
-          <div className="lg:col-span-4 self-end lg:mt-16 lg:pl-6">
-            <p className="text-base leading-7 text-zinc-700 mb-6 max-w-[36ch]">
+          <div className="lg:col-span-4 self-end lg:mt-16 lg:pl-6 text-center lg:text-left">
+            <p className="text-sm sm:text-base leading-6 sm:leading-7 text-zinc-700 mb-4 sm:mb-6 max-w-[36ch] mx-auto lg:mx-0">
               Today, with partners across the continent and globally, we are
               shaping a new future for Africa&apos;s workforce – one that works for
               everyone.
             </p>
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-6 py-3 text-white font-medium shadow-sm hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/40"
+              className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 sm:px-6 py-2 sm:py-3 text-white font-medium shadow-sm hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/40 text-sm sm:text-base w-full sm:w-auto"
             >
               Join the movement
             </a>

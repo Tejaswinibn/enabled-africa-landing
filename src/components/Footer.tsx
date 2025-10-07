@@ -4,29 +4,29 @@ import Link from "next/link";
 export default function Footer() {
   return (
         <footer className="bg-black text-white">
-          <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         {/* Card container with rounded top corners */}
-        <div className="mt-16 rounded-t-2xl bg-zinc-950/95 ring-1 ring-white/10">
+        <div className="mt-8 sm:mt-12 lg:mt-16 rounded-t-2xl bg-zinc-950/95 ring-1 ring-white/10">
           {/* Top content */}
-          <div className="grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-12 md:px-10">
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-6 py-8 sm:py-10 lg:py-12 md:grid-cols-12 md:px-6 lg:px-10">
             {/* Brand */}
-            <div className="md:col-span-3 flex items-start gap-3">
+            <div className="md:col-span-3 flex items-start gap-2 sm:gap-3">
               <Image
                 src="/images/Group 1171276407.png"
                 alt="Enabled Africa"
                 width={32}
                 height={32}
-                className="rounded"
+                className="rounded w-6 h-6 sm:w-8 sm:h-8"
               />
               <div className="leading-tight">
-                <p className="font-semibold text-sm">Enabled Africa</p>
+                <p className="font-semibold text-xs sm:text-sm">Enabled Africa</p>
               </div>
             </div>
 
             {/* Company */}
             <nav className="md:col-span-2">
-              <h3 className="mb-3 text-sm font-semibold text-zinc-300">Company</h3>
-              <ul className="space-y-2 text-sm text-zinc-400">
+              <h3 className="mb-2 sm:mb-3 text-xs sm:text-sm font-semibold text-zinc-300">Company</h3>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-zinc-400">
                 <li><Link href="/" className="hover:text-orange-500">Home</Link></li>
                 <li><a href="#about-us" className="hover:text-orange-500">About us</a></li>
               </ul>
@@ -34,8 +34,8 @@ export default function Footer() {
 
             {/* Services */}
             <nav className="md:col-span-3">
-              <h3 className="mb-3 text-sm font-semibold text-zinc-300">Services</h3>
-              <ul className="space-y-2 text-sm text-zinc-400">
+              <h3 className="mb-2 sm:mb-3 text-xs sm:text-sm font-semibold text-zinc-300">Services</h3>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-zinc-400">
                 <li><a href="#" className="hover:text-orange-500">For Employers</a></li>
                 <li><a href="#" className="hover:text-orange-500">For Professionals</a></li>
               </ul>
@@ -43,8 +43,8 @@ export default function Footer() {
 
             {/* Legal */}
             <nav className="md:col-span-2">
-              <h3 className="mb-3 text-sm font-semibold text-zinc-300">Legal</h3>
-              <ul className="space-y-2 text-sm text-zinc-400">
+              <h3 className="mb-2 sm:mb-3 text-xs sm:text-sm font-semibold text-zinc-300">Legal</h3>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-zinc-400">
                 <li><a href="/privacy" className="hover:text-orange-500">Privacy Policy</a></li>
               </ul>
             </nav>
