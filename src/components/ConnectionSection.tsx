@@ -7,8 +7,8 @@ export default function ConnectionSection() {
         {/* Mobile Layout - Stacked */}
         <div className="block md:hidden">
           {/* Mobile Left Text */}
-          <div className="text-center mb-8">
-            <h2 className="text-[22px] sm:text-[24px] font-semibold leading-tight text-gray-800 mb-4">
+          <div className="text-center mb-8 px-4">
+            <h2 className="text-[20px] sm:text-[22px] font-semibold leading-tight text-gray-800 mb-4">
               Enabled Africa connects<br />
               people and opportunities<br />
               across the continent
@@ -95,7 +95,7 @@ export default function ConnectionSection() {
 
           {/* Mobile Right Text */}
           <div className="text-center px-4">
-            <p className="text-gray-700 text-[15px] leading-7 max-w-[85%] mx-auto ml-8">
+            <p className="text-gray-700 text-[15px] leading-7 max-w-[90%] mx-auto">
               We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
             </p>
           </div>
