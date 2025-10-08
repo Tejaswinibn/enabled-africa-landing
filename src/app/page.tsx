@@ -20,15 +20,15 @@ export default function Home() {
                   <div className="absolute inset-0 bg-black/20"></div>
                   
                   <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 w-full relative z-10">
-                    <div className="max-w-[24ch] sm:max-w-[26ch] lg:max-w-[28ch] mx-auto sm:mx-0 sm:ml-8 lg:ml-12 text-center sm:text-left">
-                      <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold mb-4 sm:mb-6 md:mb-8 leading-tight" style={{ color: 'white' }}>
+                    <div className="max-w-[28ch] sm:max-w-[32ch] lg:max-w-[36ch] mx-auto sm:mx-0 sm:ml-8 lg:ml-12 text-center sm:text-left">
+                      <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold mb-8 sm:mb-10 md:mb-12 leading-tight" style={{ color: 'white' }}>
                         Africa&apos;s<br />
-                        Largest Talent<br />
+                        Largest Talent <br />
                         Bank
                       </h1>
-                      <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-7 sm:leading-8 mb-6 sm:mb-8 md:mb-10 max-w-[60ch]" style={{ color: 'white' }}>
-                        Building accessible futures through<br />
-                        jobs, skills, and innovation
+                      <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-relaxed mb-8 sm:mb-10 md:mb-12 max-w-[55ch]" style={{ color: 'white' }}>
+                        Building accessible futures<br />
+                        through jobs, skills, and innovation<br />
                       </p>
                       <button className="bg-orange-500 hover:bg-orange-600 text-white text-[14px] sm:text-[15px] md:text-[16px] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-lg w-full sm:w-auto font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                         Get Started Now
