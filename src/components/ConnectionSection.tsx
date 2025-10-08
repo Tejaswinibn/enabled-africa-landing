@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ConnectionSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section id="who-we-are" className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 md:px-10 lg:px-12">
         {/* Mobile Layout - Stacked */}
         <div className="block md:hidden">
@@ -94,8 +94,8 @@ export default function ConnectionSection() {
           </div>
 
           {/* Mobile Right Text */}
-          <div className="text-center">
-            <p className="text-gray-700 text-[15px] leading-7 max-w-[90%] mx-auto">
+          <div className="text-center px-4">
+            <p className="text-gray-700 text-[15px] leading-7 max-w-[85%] mx-auto ml-8">
               We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
             </p>
           </div>

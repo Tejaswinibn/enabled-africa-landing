@@ -2,121 +2,85 @@ import Image from "next/image";
 
 export default function WhatYouGet() {
   return (
-    <section id="what-you-get" className="py-8 sm:py-12 lg:py-20 bg-white">
-      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-          {/* Left Section - What You Get with Images */}
-          <div className="w-full lg:w-1/2">
-            <div className="flex flex-col gap-6">
-              {/* Main Heading */}
-              <h2 className="text-5xl lg:text-6xl font-bold text-black leading-tight">
-                What<br />You Get
-              </h2>
-              
-              {/* Images Container - Side by side */}
-              <div className="flex gap-4 items-end">
-                {/* Small Document Image - Left */}
-                <div className="w-2/5">
-                  <Image 
-                    src="/images/Group 1171276410.png" 
-                    alt="Document illustration" 
-                    width={200}
-                    height={300}
-                    className="w-full h-56 lg:h-64 object-cover rounded-2xl"
-                  />
-                </div>
-                
-                {/* Large Person Image - Right */}
-                <div className="w-3/5">
-                  <Image 
-                    src="/images/young-businessman-explaining-his-colleague-wheelchair-online-information.png" 
-                    alt="Professional person" 
-                    width={400}
-                    height={500}
-                    className="w-full h-72 lg:h-80 object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
+    <section id="what-you-get" className="py-8 sm:py-12 lg:py-16 bg-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8 lg:gap-12">
+          {/* Left Column - Single Image */}
+          <div className="w-full lg:w-1/2 lg:max-w-lg">
+            <div className="relative w-full max-w-xs sm:max-w-sm mx-auto lg:mx-0">
+              <Image
+                src="/images/39e84348-3948-497e-8d1d-19fce98b26d3.jpeg"
+                alt="What You Get images"
+                width={400}
+                height={500}
+                className="w-full h-auto rounded-lg brightness-100 contrast-100"
+                priority
+                style={{ filter: 'none' }}
+              />
             </div>
           </div>
 
-          {/* Right Section - Benefits List */}
-          <div className="w-full lg:w-1/2 space-y-8">
-            {/* Benefit 1 */}
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: '#E8F5E9' }}
-                >
-                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          {/* Right Column - Features */}
+          <div className="w-full lg:w-1/2 lg:max-w-2xl">
+            <div className="max-w-sm sm:max-w-md lg:max-w-lg mx-auto lg:mx-0">
+              <ul className="space-y-4 sm:space-y-6">
+              {/* Feature 1 */}
+              <li className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="16.5" y1="16.5" x2="21" y2="21" />
                   </svg>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-black mb-2">Jobs That Matter</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Discover opportunities across industries, from startups to multinationals</p>
-              </div>
-            </div>
-
-            {/* Benefit 2 */}
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: '#E8F5E9' }}
-                >
-                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base font-bold text-black mb-1 sm:mb-2">Jobs That Matter</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Discover opportunities across industries, from startups to multinationals</p>
+                </div>
+              </li>
+              
+              {/* Feature 2 */}
+              <li className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
                   </svg>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-black mb-2">One Profile, Many Matches</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Build your profile once, and let employers find you</p>
-              </div>
-            </div>
-
-            {/* Benefit 3 */}
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: '#E8F5E9' }}
-                >
-                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base font-bold text-black mb-1 sm:mb-2">One Profile, Many Matches</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Build your profile once, and let employers find you</p>
+                </div>
+              </li>
+              
+              {/* Feature 3 */}
+              <li className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M6 18V4m6 14V10m6 8v-4" />
                   </svg>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-black mb-2">Growth Beyond Work</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Access training and learning programs to upgrade your skills</p>
-              </div>
-            </div>
-
-            {/* Benefit 4 */}
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: '#E8F5E9' }}
-                >
-                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base font-bold text-black mb-1 sm:mb-2">Growth Beyond Work</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Access training and learning programs to upgrade your skills</p>
+                </div>
+              </li>
+              
+              {/* Feature 4 */}
+              <li className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M12 21c-4.5-4.5-9-7.5-9-11.25C3 6.04 5 4 7.5 4c1.84 0 3.34 1.13 4.5 2.8C13.16 5.13 14.66 4 16.5 4 19 4 21 6.04 21 9.75c0 3.75-4.5 6.75-9 11.25z" />
                   </svg>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-black mb-2">Support Along the Way</h3>
-                <p className="text-base text-gray-600 leading-relaxed">Career advice, mentorship, and resources to help you succeed</p>
-              </div>
-            </div>
-
-            {/* Create Profile Button */}
-            <div className="pt-4">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-2xl font-semibold text-base transition-colors shadow-lg">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base font-bold text-black mb-1 sm:mb-2">Support Along the Way</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Career advice, mentorship, and resources to help you succeed</p>
+                </div>
+              </li>
+              </ul>
+              
+              {/* Call to Action Button */}
+              <button className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 rounded-lg bg-orange-500 text-white font-semibold text-sm sm:text-base hover:bg-orange-600 transition-colors w-full sm:w-auto">
                 Create Profile
               </button>
             </div>
@@ -125,39 +89,39 @@ export default function WhatYouGet() {
       </div>
       
       {/* Why Employers Choose Us Section */}
-      <div className="mt-8 sm:mt-12 lg:mt-20 mb-8 sm:mb-12 lg:mb-20">
-        <div className="text-center mb-6 sm:mb-8 lg:mb-16">
-          <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4 lg:mb-6">
+      <div className="mt-12 sm:mt-16 lg:mt-20">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4 px-4">
             Why Employers Choose Us
           </h2>
-          <p className="text-sm sm:text-base lg:text-xl text-gray-600 max-w-4xl mx-auto px-3 sm:px-4">
-            Hire Africa&apos;s Best Talent. Build Stronger Teams.<br />
-            A trusted way to connect with skilled and motivated candidates.
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto px-4 leading-relaxed">
+            Hire Africa&apos;s Best Talent. Build Stronger Teams.<br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>A trusted way to connect with skilled and motivated candidates.
           </p>
         </div>
         
-        <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
             {/* Card 1 - Wide Access */}
             <div 
-              className="p-3 sm:p-4 lg:p-6 rounded-xl text-white relative min-h-[200px] sm:min-h-[240px] lg:min-h-[280px] flex flex-col justify-end"
+              className="p-3 sm:p-4 lg:p-6 rounded-xl text-white relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#045F33' }}
             >
               <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Wide Access</h3>
-              <p className="text-xs sm:text-sm lg:text-base">Connect with diverse professionals across Africa</p>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-white">Wide Access</h3>
+              <p className="text-xs sm:text-sm lg:text-base text-white leading-relaxed">Connect with diverse professionals across Africa</p>
             </div>
 
             {/* Card 2 - Image - diverse-multiracial-group */}
-            <div className="min-h-[200px] sm:min-h-[240px] lg:min-h-[280px] p-1 sm:p-2 lg:p-4">
+            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
               <Image 
                 src="/images/diverse-multiracial-group-people-giving-high-five-modern-office-teamwork-concept.png" 
                 alt="Team in office" 
@@ -169,24 +133,24 @@ export default function WhatYouGet() {
 
             {/* Card 3 - Faster Hiring */}
             <div 
-              className="p-4 sm:p-6 rounded-xl text-gray-800 relative min-h-[240px] sm:min-h-[280px] flex flex-col justify-end"
+              className="p-3 sm:p-4 lg:p-6 rounded-xl text-gray-800 relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#EFC36B' }}
             >
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
                   width={32}
                   height={32}
-                  className="w-6 h-6 sm:w-8 sm:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Faster Hiring</h3>
-              <p className="text-sm sm:text-base">Get pre-matched with the right candidates, ready to contribute</p>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-black">Faster Hiring</h3>
+              <p className="text-xs sm:text-sm lg:text-base text-black leading-relaxed">Get pre-matched with the right candidates, ready to contribute</p>
             </div>
 
             {/* Card 4 - Image - MicrosoftTeams */}
-            <div className="min-h-[240px] sm:min-h-[280px] p-2 sm:p-4">
+            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
               <Image 
                 src="/images/645bd6210b74564994a286d7_MicrosoftTeams-image (1).png" 
                 alt="Man in striped shirt" 
@@ -197,7 +161,7 @@ export default function WhatYouGet() {
             </div>
 
             {/* Card 5 - Image - istock-2160995080 */}
-            <div className="min-h-[240px] sm:min-h-[280px] p-2 sm:p-4">
+            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
               <Image 
                 src="/images/istock-2160995080.png" 
                 alt="Team collaboration" 
@@ -209,24 +173,24 @@ export default function WhatYouGet() {
 
             {/* Card 6 - Inclusive Made Simple */}
             <div 
-              className="p-4 sm:p-6 rounded-xl text-gray-800 relative min-h-[240px] sm:min-h-[280px] flex flex-col justify-end"
+              className="p-3 sm:p-4 lg:p-6 rounded-xl text-gray-800 relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#EFC36B' }}
             >
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
                   width={32}
                   height={32}
-                  className="w-6 h-6 sm:w-8 sm:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Inclusive Made Simple</h3>
-              <p className="text-sm sm:text-base">Resources and support for building workplaces where everyone can thrive</p>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-black">Inclusive Made Simple</h3>
+              <p className="text-xs sm:text-sm lg:text-base text-black leading-relaxed">Resources and support for building workplaces where everyone can thrive</p>
             </div>
 
-            {/* Card 7 - Image - Placeholder for another image */}
-            <div className="min-h-[240px] sm:min-h-[280px] p-2 sm:p-4">
+            {/* Card 7 - Image - financial-businesswomen */}
+            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
               <Image 
                 src="/images/financial-businesswomen-analyze-the-graph-of-the-c-2025-02-22-17-12-16-utc.png" 
                 alt="Woman with laptop" 
@@ -238,20 +202,20 @@ export default function WhatYouGet() {
 
             {/* Card 8 - Long-Term Value */}
             <div 
-              className="p-4 sm:p-6 rounded-xl text-white relative min-h-[240px] sm:min-h-[280px] flex flex-col justify-end"
+              className="p-3 sm:p-4 lg:p-6 rounded-xl text-white relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#045F33' }}
             >
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
                   src="/images/Objects.png" 
                   alt="Check button" 
                   width={32}
                   height={32}
-                  className="w-6 h-6 sm:w-8 sm:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Long-Term Value</h3>
-              <p className="text-sm sm:text-base">Hiring through EnabledAfrica helps you build engaged, innovative teams</p>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-white">Long-Term Value</h3>
+              <p className="text-xs sm:text-sm lg:text-base text-white leading-relaxed">Hiring through EnabledAfrica helps you build engaged, innovative teams</p>
             </div>
           </div>
         </div>

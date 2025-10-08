@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyEnabledAfrica() {
   return (
-    <section className="py-16 bg-white">
+    <section id="why-enabled-africa" className="py-16 bg-white">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Title */}
         <div className="text-center mb-12">
