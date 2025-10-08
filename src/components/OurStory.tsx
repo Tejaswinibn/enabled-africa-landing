@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="relative isolate py-12 sm:py-16 lg:py-20">
+    <section id="our-story" className="relative isolate py-12 sm:py-16 lg:py-20">
       {/* Centered container for everything, including ribbon */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10">
         {/* Ribbon underlay positioned to this container only */}

@@ -19,7 +19,7 @@ export default function Header() {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-6">
-          <Link href="#" className="text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
+          <Link href="#who-we-are" className="text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
           <Link href="#why-enabled-africa" className="text-gray-600 hover:text-orange-500 text-base">Why Enabled Africa</Link>
           <Link href="#what-you-get" className="text-gray-600 hover:text-orange-500 text-base">What you get</Link>
           <Link href="#about-us" className="text-gray-600 hover:text-orange-500 text-base">About us</Link>
@@ -51,7 +51,7 @@ export default function Header() {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-4">
-            <Link href="#" className="block text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
+            <Link href="#who-we-are" className="block text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
             <Link href="#why-enabled-africa" className="block text-gray-600 hover:text-orange-500 text-base">Why Enabled Africa</Link>
             <Link href="#what-you-get" className="block text-gray-600 hover:text-orange-500 text-base">What you get</Link>
             <Link href="#about-us" className="block text-gray-600 hover:text-orange-500 text-base">About us</Link>
