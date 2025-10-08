@@ -44,7 +44,7 @@ export default function PromotionalBanner() {
       <section className="py-6 sm:py-8 lg:py-10 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           {/* Colorful Slogan */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 lg:mb-5 leading-tight whitespace-nowrap">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-5 leading-tight">
             <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
               Your Skills.
             </span>

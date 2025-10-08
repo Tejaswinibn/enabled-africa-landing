@@ -16,21 +16,21 @@ export default function ConnectionSection() {
           </div>
 
           {/* Mobile Map Container - Fixed positioning like desktop */}
-          <div className="relative h-[400px] mb-8">
+          <div className="relative h-[380px] sm:h-[420px] mb-8 overflow-hidden">
             {/* Africa Map - Mobile (scaled down but same relative position) */}
-            <div className="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-5">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
               <Image
                 src="/images/Vector.png"
                 alt="Africa Map"
                 width={350}
                 height={350}
-                className="w-[320px] h-[320px] object-contain drop-shadow-lg"
+                className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] object-contain drop-shadow-lg"
                 priority
               />
             </div>
             
             {/* Connecting Lines - Mobile (same relative position) */}
-            <div className="absolute top-[25%] left-[10%] right-[10%] h-[50%] z-10">
+            <div className="absolute top-[22%] left-[8%] right-[8%] h-[56%] z-10">
               <Image
                 src="/images/Vector 4504.png"
                 alt="Connecting Lines"
@@ -41,54 +41,54 @@ export default function ConnectionSection() {
               />
             </div>
             
-            {/* Mobile Profile Images - Same relative positions as desktop */}
-            <div className="absolute top-[15%] left-[34%] z-20">
+            {/* Mobile Profile Images - Adjusted for better positioning */}
+            <div className="absolute top-[18%] left-[36%] z-20">
               <Image 
                 src="/images/Ellipse 4344.png" 
                 alt="Profile 1" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full shadow-lg" 
               />
             </div>
             
-            <div className="absolute top-[42%] left-[38%] z-20">
+            <div className="absolute top-[42%] left-[18%] z-20">
               <Image 
                 src="/images/Ellipse 4342.png" 
                 alt="Profile 2" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full shadow-lg" 
               />
             </div>
             
-            <div className="absolute top-[65%] left-[54%] z-20">
+            <div className="absolute top-[62%] left-[48%] z-20">
               <Image 
                 src="/images/Ellipse 4345.png" 
                 alt="Profile 3" 
-                width={60} 
-                height={60} 
-                className="h-[60px] w-[60px] rounded-full shadow-lg" 
+                width={55} 
+                height={55} 
+                className="h-[55px] w-[55px] sm:h-[60px] sm:w-[60px] rounded-full shadow-lg" 
               />
             </div>
             
-            <div className="absolute top-[48%] left-[75%] z-20">
+            <div className="absolute top-[22%] left-[68%] z-20">
               <Image 
                 src="/images/Ellipse 4343.png" 
                 alt="Profile 4" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full shadow-lg" 
               />
             </div>
             
-            <div className="absolute top-[60%] left-[58%] z-20">
+            <div className="absolute top-[58%] left-[28%] z-20">
               <Image 
                 src="/images/Ellipse 4346.png" 
                 alt="Profile 5" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full shadow-lg" 
               />
             </div>
           </div>
