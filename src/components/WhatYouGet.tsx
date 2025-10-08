@@ -4,117 +4,119 @@ export default function WhatYouGet() {
   return (
     <section id="what-you-get" className="py-8 sm:py-12 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           {/* Left Section - What You Get with Images */}
-          <div className="w-full lg:w-1/3">
-            {/* Mobile: Stack vertically, Desktop: Side by side */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-end">
-              {/* Small Document Image with Text Above */}
-              <div className="w-full sm:w-42 flex-shrink-0 flex flex-col">
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
-                  What<br />You Get
-                </h2>
-                <div className="flex-1 flex items-end">
+          <div className="w-full lg:w-1/2">
+            <div className="flex flex-col gap-6">
+              {/* Main Heading */}
+              <h2 className="text-5xl lg:text-6xl font-bold text-black leading-tight">
+                What<br />You Get
+              </h2>
+              
+              {/* Images Container - Side by side */}
+              <div className="flex gap-4 items-end">
+                {/* Small Document Image - Left */}
+                <div className="w-2/5">
                   <Image 
                     src="/images/Group 1171276410.png" 
                     alt="Document illustration" 
                     width={200}
-                    height={320}
-                    className="w-full h-48 sm:h-60 lg:h-80 object-cover rounded-xl"
+                    height={300}
+                    className="w-full h-56 lg:h-64 object-cover rounded-2xl"
                   />
                 </div>
-              </div>
-              
-              {/* Large Person Image */}
-              <div className="w-full sm:flex-1">
-                <Image 
-                  src="/images/young-businessman-explaining-his-colleague-wheelchair-online-information.png" 
-                  alt="Professional person" 
-                  width={400}
-                  height={500}
-                  className="w-full h-auto rounded-xl"
-                />
+                
+                {/* Large Person Image - Right */}
+                <div className="w-3/5">
+                  <Image 
+                    src="/images/young-businessman-explaining-his-colleague-wheelchair-online-information.png" 
+                    alt="Professional person" 
+                    width={400}
+                    height={500}
+                    className="w-full h-72 lg:h-80 object-cover rounded-2xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right Section - Benefits List */}
-          <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6 lg:space-y-8">
+          <div className="w-full lg:w-1/2 space-y-8">
             {/* Benefit 1 */}
-            <div className="flex items-start gap-2 sm:gap-3 lg:gap-4">
+            <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div 
-                  className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(4,95,51,0.22)' }}
+                  className="w-12 h-12 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: '#E8F5E9' }}
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
                     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                   </svg>
                 </div>
               </div>
               <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">Jobs That Matter</h3>
-                <p className="text-xs sm:text-sm lg:text-base text-gray-600">Discover opportunities across industries, from startups to multinationals</p>
+                <h3 className="text-xl font-bold text-black mb-2">Jobs That Matter</h3>
+                <p className="text-base text-gray-600 leading-relaxed">Discover opportunities across industries, from startups to multinationals</p>
               </div>
             </div>
 
             {/* Benefit 2 */}
-            <div className="flex items-start gap-2 sm:gap-3 lg:gap-4">
+            <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div 
-                  className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(4,95,51,0.22)' }}
+                  className="w-12 h-12 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: '#E8F5E9' }}
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                   </svg>
                 </div>
               </div>
               <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">One Profile, Many Matches</h3>
-                <p className="text-xs sm:text-sm lg:text-base text-gray-600">Build your profile once, and let employers find you</p>
+                <h3 className="text-xl font-bold text-black mb-2">One Profile, Many Matches</h3>
+                <p className="text-base text-gray-600 leading-relaxed">Build your profile once, and let employers find you</p>
               </div>
             </div>
 
             {/* Benefit 3 */}
-            <div className="flex items-start gap-2 sm:gap-3 lg:gap-4">
+            <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div 
-                  className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(4,95,51,0.22)' }}
+                  className="w-12 h-12 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: '#E8F5E9' }}
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
                     <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
                   </svg>
                 </div>
               </div>
               <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">Growth Beyond Work</h3>
-                <p className="text-xs sm:text-sm lg:text-base text-gray-600">Access training and learning programs to upgrade your skills</p>
+                <h3 className="text-xl font-bold text-black mb-2">Growth Beyond Work</h3>
+                <p className="text-base text-gray-600 leading-relaxed">Access training and learning programs to upgrade your skills</p>
               </div>
             </div>
 
             {/* Benefit 4 */}
-            <div className="flex items-start gap-2 sm:gap-3 lg:gap-4">
+            <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div 
-                  className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(4,95,51,0.22)' }}
+                  className="w-12 h-12 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: '#E8F5E9' }}
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" style={{ color: '#4CAF50' }} fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                   </svg>
                 </div>
               </div>
               <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">Support Along the Way</h3>
-                <p className="text-xs sm:text-sm lg:text-base text-gray-600">Career advice, mentorship, and resources to help you succeed</p>
+                <h3 className="text-xl font-bold text-black mb-2">Support Along the Way</h3>
+                <p className="text-base text-gray-600 leading-relaxed">Career advice, mentorship, and resources to help you succeed</p>
               </div>
             </div>
 
             {/* Create Profile Button */}
-            <div className="pt-2 sm:pt-4">
-              <button className="bg-orange-500 text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-lg hover:bg-orange-600 transition font-semibold text-sm sm:text-base w-full sm:w-auto">
+            <div className="pt-4">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-2xl font-semibold text-base transition-colors shadow-lg">
                 Create Profile
               </button>
             </div>
