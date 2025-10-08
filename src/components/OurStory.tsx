@@ -17,7 +17,7 @@ export default function OurStory() {
           />
         </div>
 
-        <div className="grid grid-cols-1 items-center gap-y-6 sm:gap-y-8 lg:gap-y-10 lg:grid-cols-12 lg:gap-x-12">
+        <div className="relative z-10 grid grid-cols-1 items-center gap-y-6 sm:gap-y-8 lg:gap-y-10 lg:grid-cols-12 lg:gap-x-12">
           {/* Left text — force to top-left and closer to image */}
           <div className="lg:col-span-4 self-start lg:-mt-12 lg:pr-6 text-center lg:text-left">
             <h2 className="text-[24px] sm:text-[28px] font-semibold tracking-tight text-zinc-900 mb-3 sm:mb-4">
@@ -30,7 +30,7 @@ export default function OurStory() {
           </div>
 
           {/* Center image (unchanged) */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 relative z-20">
             <div className="overflow-hidden rounded-2xl ring-1 ring-black/10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.25)]">
               <Image
                 src="/images/disabled-woman-in-wheelchair-looking-at-computer-2025-03-15-01-12-15-utc.png"
