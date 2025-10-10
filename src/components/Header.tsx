@@ -31,7 +31,7 @@ export default function Header() {
           <Link href="#" className="text-gray-600 hover:text-orange-500 text-sm font-medium">
             Login
           </Link>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
+          <button className="text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
             Sign up
           </button>
         </div>
@@ -51,11 +51,11 @@ export default function Header() {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-4">
-            <Link href="#who-we-are" className="block text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
-            <Link href="#why-enabled-africa" className="block text-gray-600 hover:text-orange-500 text-base">Why Enabled Africa</Link>
-            <Link href="#what-you-get" className="block text-gray-600 hover:text-orange-500 text-base">What you get</Link>
-            <Link href="#about-us" className="block text-gray-600 hover:text-orange-500 text-base">About us</Link>
-            <Link href="#our-story" className="block text-gray-600 hover:text-orange-500 text-base">Our story</Link>
+            <Link href="#who-we-are" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-orange-500 text-base">Who we are</Link>
+            <Link href="#why-enabled-africa" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-orange-500 text-base">Why Enabled Africa</Link>
+            <Link href="#what-you-get" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-orange-500 text-base">What you get</Link>
+            <Link href="#about-us" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-orange-500 text-base">About us</Link>
+            <Link href="#our-story" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-orange-500 text-base">Our story</Link>
             <div className="flex flex-col gap-3 pt-4 border-t border-gray-200">
               <Link href="#" className="text-gray-600 hover:text-orange-500 text-sm font-medium">
                 Login

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white" style={{ borderRadius: '20px 20px 0 0' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
-        {/* Card container with rounded top corners */}
-        <div className="mt-8 sm:mt-12 lg:mt-16 rounded-t-2xl bg-zinc-950/95 ring-1 ring-white/10">
+        {/* Main footer content */}
+        <div className="mt-8 sm:mt-12 lg:mt-16">
           {/* Top content */}
           <div className="grid grid-cols-1 gap-8 sm:gap-10 lg:gap-12 px-4 sm:px-6 py-8 sm:py-10 lg:py-12 md:grid-cols-12 md:px-6 lg:px-10">
             {/* Brand */}
@@ -19,7 +19,7 @@ export default function Footer() {
                 className="rounded w-8 h-8 sm:w-10 sm:h-10"
               />
               <div className="leading-tight">
-                <p className="font-semibold text-sm sm:text-base">Enabled Africa</p>
+                <p className="font-semibold text-base sm:text-lg text-white">Enabled<br />Africa</p>
               </div>
             </div>
 
@@ -53,31 +53,37 @@ export default function Footer() {
             <div className="md:col-span-2">
               <h3 className="mb-4 text-base font-semibold text-zinc-300">Follow us</h3>
               <div className="flex items-center gap-4">
-                {/* LinkedIn (orange circle) */}
+                {/* LinkedIn (orange circle with shadow) */}
                 <a
                   aria-label="LinkedIn"
                   href="#"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg transition relative"
+                  style={{ 
+                    backgroundColor: '#F95206',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                  }}
                 >
                   <span className="text-sm font-bold text-white">in</span>
                 </a>
 
-                {/* Instagram (gray circle) */}
+                {/* Instagram (gray circle with shadow) */}
                 <a
                   aria-label="Instagram"
                   href="#"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-zinc-700 hover:bg-zinc-600 transition"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-zinc-700 hover:bg-zinc-600 transition relative"
+                  style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
                 >
                   <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2.2c3.2 0 3.6.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.26.07 1.64.07 4.85s-.01 3.59-.07 4.85c-.15 3.22-1.67 4.77-4.92 4.92-1.25.06-1.64.07-4.85.07s-3.6-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.2 15.6 2.2 15.2 2.2 12s0-3.59.07-4.85c.15-3.23 1.66-4.77 4.92-4.92C8.4 2.21 8.8 2.2 12 2.2zm0 3.68a6.12 6.12 0 1 0 0 12.24 6.12 6.12 0 0 0 0-12.24zm6.41-1.36a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88zM12 9.2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z" />
                   </svg>
                 </a>
 
-                {/* Facebook (gray circle) */}
+                {/* Facebook (gray circle with shadow) */}
                 <a
                   aria-label="Facebook"
                   href="#"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-zinc-700 hover:bg-zinc-600 transition"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-zinc-700 hover:bg-zinc-600 transition relative"
+                  style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
                 >
                   <span className="text-sm font-bold text-white">f</span>
                 </a>
@@ -85,11 +91,11 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="mx-6 border-t border-white/10 md:mx-10" />
+          {/* Separator line */}
+          <div className="border-t border-zinc-600 mx-6 md:mx-10"></div>
 
           {/* Bottom row */}
-          <div className="flex items-center justify-center px-6 py-6 md:px-10">
+          <div className="px-6 py-6 md:px-10">
             <p className="text-sm text-zinc-400">
               © 2025 EnabledAfrica. All rights reserved.
             </p>

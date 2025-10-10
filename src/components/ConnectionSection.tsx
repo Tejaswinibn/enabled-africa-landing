@@ -2,35 +2,35 @@ import Image from "next/image";
 
 export default function ConnectionSection() {
   return (
-    <section id="who-we-are" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section id="who-we-are" className="py-8 sm:py-12 lg:py-16 bg-white">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 md:px-10 lg:px-12">
         {/* Mobile Layout - Stacked */}
         <div className="block md:hidden">
           {/* Mobile Left Text */}
-          <div className="text-center mb-8">
-            <h2 className="text-[22px] sm:text-[24px] font-semibold leading-tight text-gray-800 mb-4">
-              Enabled Africa connects<br />
-              people and opportunities<br />
-              across the continent
+          <div className="text-center mb-8 px-4">
+            <h2 className="text-[20px] sm:text-[22px] font-semibold leading-tight text-gray-800 mb-4">
+              Connecting you to the<br />
+              best talent across<br />
+              Africa
             </h2>
           </div>
 
           {/* Mobile Map Container - Fixed positioning like desktop */}
-          <div className="relative h-[400px] mb-8">
-            {/* Africa Map - Mobile (scaled down but same relative position) */}
-            <div className="absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-5">
+          <div className="relative h-[380px] sm:h-[420px] mb-8 overflow-hidden">
+            {/* Africa Map - Mobile - Made larger */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
               <Image
                 src="/images/Vector.png"
                 alt="Africa Map"
-                width={350}
-                height={350}
-                className="w-[320px] h-[320px] object-contain drop-shadow-lg"
+                width={400}
+                height={400}
+                className="w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] object-contain"
                 priority
               />
             </div>
             
             {/* Connecting Lines - Mobile (same relative position) */}
-            <div className="absolute top-[25%] left-[10%] right-[10%] h-[50%] z-10">
+            <div className="absolute top-[22%] left-[8%] right-[8%] h-[56%] z-10">
               <Image
                 src="/images/Vector 4504.png"
                 alt="Connecting Lines"
@@ -41,62 +41,66 @@ export default function ConnectionSection() {
               />
             </div>
             
-            {/* Mobile Profile Images - Same relative positions as desktop */}
-            <div className="absolute top-[15%] left-[34%] z-20">
+            {/* Mobile Profile Images - Removed shadows */}
+            <div className="absolute top-[15%] left-[32%] z-20">
               <Image 
                 src="/images/Ellipse 4344.png" 
                 alt="Profile 1" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[42%] left-[38%] z-20">
+            <div className="absolute top-[42%] left-[18%] z-20">
               <Image 
                 src="/images/Ellipse 4342.png" 
                 alt="Profile 2" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[65%] left-[54%] z-20">
+            <div className="absolute top-[65%] left-[52%] z-20">
               <Image 
                 src="/images/Ellipse 4345.png" 
                 alt="Profile 3" 
-                width={60} 
-                height={60} 
-                className="h-[60px] w-[60px] rounded-full shadow-lg" 
+                width={55} 
+                height={55} 
+                className="h-[55px] w-[55px] sm:h-[60px] sm:w-[60px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[48%] left-[75%] z-20">
+            <div className="absolute top-[22%] left-[69%] z-20">
               <Image 
                 src="/images/Ellipse 4343.png" 
                 alt="Profile 4" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[60%] left-[58%] z-20">
+            <div className="absolute top-[58%] left-[28%] z-20">
               <Image 
                 src="/images/Ellipse 4346.png" 
                 alt="Profile 5" 
-                width={50} 
-                height={50} 
-                className="h-[50px] w-[50px] rounded-full shadow-lg" 
+                width={45} 
+                height={45} 
+                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
               />
             </div>
           </div>
 
-          {/* Mobile Right Text */}
+          {/* Mobile Right Text - Formatted in exactly 5 lines */}
           <div className="text-center px-4">
-            <p className="text-gray-700 text-[15px] leading-7 max-w-[85%] mx-auto ml-8">
-              We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
+            <p className="text-gray-700 text-[15px] leading-7 max-w-[90%] mx-auto">
+              We believe that talent exists everywhere<br />
+              in Africa, and everyone deserves a fair chance<br />
+              to succeed.Whether you&apos;re a job seeker,<br />
+              a student, a professional, or an employer,<br />
+              we make it easier to grow, connect, and thrive.
             </p>
           </div>
         </div>
@@ -107,20 +111,20 @@ export default function ConnectionSection() {
             {/* Left Text Block */}
             <div className="absolute top-16 left-8 lg:left-12 z-10 max-w-[35ch]">
               <h2 className="text-[20px] lg:text-[24px] font-semibold leading-tight text-gray-800 mb-4">
-                Enabled Africa connects<br />
-                people and opportunities<br />
-                across the continent
+                Connecting you to the<br />
+                best talent across<br />
+                Africa
               </h2>
             </div>
 
-            {/* Africa Map - Desktop */}
+            {/* Africa Map - Desktop - Made larger */}
             <div className="absolute top-1/2 left-[55%] lg:left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-5">
               <Image
                 src="/images/Vector.png"
                 alt="Africa Map"
-                width={450}
-                height={450}
-                className="w-[420px] h-[420px] lg:w-[480px] lg:h-[480px] object-contain drop-shadow-lg"
+                width={500}
+                height={500}
+                className="w-[480px] h-[480px] lg:w-[550px] lg:h-[550px] object-contain"
                 priority
               />
             </div>
@@ -137,15 +141,15 @@ export default function ConnectionSection() {
               />
             </div>
             
-            {/* Desktop Profile Images - Exact Figma Positioning */}
+            {/* Desktop Profile Images - Removed shadows */}
             {/* Top-Left Profile - At actual top-left of African map (Morocco/Western Sahara region) */}
-            <div className="absolute top-[15%] left-[34%] lg:top-[15%] lg:left-[34%] z-20">
+            <div className="absolute top-[12%] left-[30%] lg:top-[12%] lg:left-[30%] z-20">
               <Image 
                 src="/images/Ellipse 4344.png" 
                 alt="Profile 1" 
                 width={75} 
                 height={75} 
-                className="h-[75px] w-[75px] rounded-full shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-[75px] w-[75px] rounded-full hover:scale-105 transition-transform duration-300" 
               />
             </div>
             
@@ -156,29 +160,29 @@ export default function ConnectionSection() {
                 alt="Profile 2" 
                 width={75} 
                 height={75} 
-                className="h-[75px] w-[75px] rounded-full shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-[75px] w-[75px] rounded-full hover:scale-105 transition-transform duration-300" 
               />
             </div>
             
             {/* Center-Right Profile - On the map, larger size */}
-            <div className="absolute top-[65%] left-[50%] lg:top-[65%] lg:left-[54%] z-20">
+            <div className="absolute top-[68%] left-[54%] lg:top-[68%] lg:left-[58%] z-20">
               <Image 
                 src="/images/Ellipse 4345.png" 
                 alt="Profile 3" 
                 width={95} 
                 height={95} 
-                className="h-[95px] w-[95px] rounded-full shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-[95px] w-[95px] rounded-full hover:scale-105 transition-transform duration-300" 
               />
             </div>
             
             {/* Top-Right Profile - Above map, right side */}
-            <div className="absolute top-44 left-[65%] lg:top-48 lg:left-[70%] z-20">
+            <div className="absolute top-44 left-[66%] lg:top-48 lg:left-[71%] z-20">
               <Image 
                 src="/images/Ellipse 4343.png" 
                 alt="Profile 4" 
                 width={75} 
                 height={75} 
-                className="h-[75px] w-[75px] rounded-full shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-[75px] w-[75px] rounded-full hover:scale-105 transition-transform duration-300" 
               />
             </div>
             
@@ -189,14 +193,18 @@ export default function ConnectionSection() {
                 alt="Profile 5" 
                 width={75} 
                 height={75} 
-                className="h-[75px] w-[75px] rounded-full shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-[75px] w-[75px] rounded-full hover:scale-105 transition-transform duration-300" 
               />
             </div>
             
-            {/* Right Text Block */}
+            {/* Right Text Block - Formatted in exactly 5 lines */}
             <div className="absolute top-[58%] right-0 lg:right-0 z-10 max-w-[40ch]">
               <p className="text-gray-700 text-[12px] lg:text-[13px] leading-relaxed">
-                We believe that talent exists everywhere in Africa, and everyone deserves a fair chance to succeed. Whether you&apos;re a job seeker, a student, a professional, or an employer, we make it easier to grow, connect, and thrive.
+                We believe that talent exists everywhere<br />
+                in Africa, and everyone deserves a fair chance<br />
+                to succeed.Whether you&apos;re a job seeker,<br />
+                a student, a professional, or an employer,<br />
+                we make it easier to grow, connect, and thrive.
               </p>
             </div>
           </div>
