@@ -4,13 +4,13 @@ import { OurValues } from "./ValueBadge";
 export default function AboutUs() {
   return (
     <>
-      <section id="about-us" className="py-8 sm:py-12 lg:py-16" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
+      <section id="about-us" className="py-10 sm:py-12 lg:py-16" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+        <div className="mx-auto max-w-7xl px-6 sm:px-6 md:px-8 lg:px-12">
 
           {/* Combined About Enabled Africa, Vision and Mission Section */}
-          <div className="bg-[#FFE8B9] py-6 sm:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-12 rounded-2xl mb-8" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
+          <div className="bg-[#FFE8B9] py-8 sm:py-8 lg:py-10 px-6 sm:px-6 md:px-8 lg:px-12 rounded-2xl mb-10" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)' }}>
             {/* About Enabled Africa Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-5 lg:mb-6 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4 lg:gap-5 mb-6 sm:mb-5 lg:mb-6 items-start">
               {/* Image Card */}
               <div className="lg:order-1 max-w-sm mx-auto lg:max-w-none">
                 <Image
@@ -18,20 +18,20 @@ export default function AboutUs() {
                   alt="Portrait"
                   width={400}
                   height={500}
-                  className="w-full h-[160px] sm:h-[180px] md:h-[200px] lg:h-[220px] object-cover rounded-2xl"
+                  className="w-full h-[180px] sm:h-[180px] md:h-[200px] lg:h-[220px] object-cover rounded-2xl"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 700px"
                 />
               </div>
 
               {/* Text Card - Left-aligned with exact lines */}
               <div className="lg:order-2 text-center lg:text-left" style={{ maxWidth: '100%' }}>
-                <h2 className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-bold text-gray-800 mb-3 sm:mb-4 leading-[1.35]" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, letterSpacing: '0%' }}>
+                <h2 className="text-[22px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-bold text-gray-800 mb-4 sm:mb-4 leading-[1.35]" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, letterSpacing: '0%' }}>
                   About<br />Enabled Africa
                 </h2>
-                <p className="text-[14px] sm:text-[15px] md:text-[16px] leading-[1.35] text-gray-600 mb-3" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 500 }}>
+                <p className="text-[15px] sm:text-[15px] md:text-[16px] leading-[1.35] text-gray-600 mb-4" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 500 }}>
                   Ability is everywhere. Opportunity should be too
                 </p>
-                <p className="text-[13px] sm:text-[14px] md:text-[15px] leading-[1.35] text-gray-700 break-words" style={{ fontFamily: 'Plus Jakarta Sans' }}>
+                <p className="text-[14px] sm:text-[14px] md:text-[15px] leading-[1.35] text-gray-700 break-words" style={{ fontFamily: 'Plus Jakarta Sans' }}>
                   EnabledAfrica is building<br />
                   a continent-wide platform that<br />
                   connects people with opportunities and<br />
@@ -41,7 +41,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision and Mission Section */}
-            <div className="space-y-3 sm:space-y-4 lg:space-y-5">
+            <div className="space-y-6 sm:space-y-4 lg:space-y-5">
             {/* Vision Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-start">
               {/* Vision Text - Responsive positioning */}

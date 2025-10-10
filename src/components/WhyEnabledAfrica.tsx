@@ -2,19 +2,19 @@ import Image from "next/image";
 
 export default function WhyEnabledAfrica() {
   return (
-    <section id="why-enabled-africa" className="py-8 sm:py-12 bg-white">
-      <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
+    <section id="why-enabled-africa" className="py-10 sm:py-12 bg-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-4 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold text-gray-800">
+          <h2 className="text-[20px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold text-gray-800">
             Why EnabledAfrica?
           </h2>
         </div>
 
         {/* Four Cards Grid - 1 row x 4 columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-6">
           {/* Card 1 - Pan-African Reach */}
-          <div className="p-6 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#FFD071' }}>
+          <div className="p-8 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#FFD071' }}>
             <div className="flex flex-col items-center text-center h-full">
               <div className="mb-12 mt-8">
                 <Image 
@@ -35,7 +35,7 @@ export default function WhyEnabledAfrica() {
           </div>
 
           {/* Card 2 - Skills First Matching */}
-          <div className="p-6 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#1A6B3F' }}>
+          <div className="p-8 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#1A6B3F' }}>
             <div className="flex flex-col items-center text-center h-full">
               <div className="mb-12 mt-8">
                 <Image 
@@ -56,7 +56,7 @@ export default function WhyEnabledAfrica() {
           </div>
 
           {/* Card 3 - Inclusive for All */}
-          <div className="p-6 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#FFD071' }}>
+          <div className="p-8 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#FFD071' }}>
             <div className="flex flex-col items-center text-center h-full">
               <div className="mb-12 mt-8">
                 <Image 
@@ -83,7 +83,7 @@ export default function WhyEnabledAfrica() {
           </div>
 
           {/* Card 4 - Beyond Jobs */}
-          <div className="p-6 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#1A6B3F' }}>
+          <div className="p-8 sm:p-8 rounded-xl h-[320px] transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#1A6B3F' }}>
             <div className="flex flex-col items-center text-center h-full">
               <div className="mb-12 mt-8">
                 <Image 

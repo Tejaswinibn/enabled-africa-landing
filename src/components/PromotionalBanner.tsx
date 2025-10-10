@@ -2,32 +2,32 @@ export default function PromotionalBanner() {
   return (
     <>
       {/* Promotional Banner */}
-      <section className="py-4 sm:py-6 lg:py-8">
-        <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
+      <section className="py-6 sm:py-6 lg:py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-4 lg:px-8">
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             {/* Background Image - No dark overlay as per Figma */}
             <img 
               src="/images/banner-background.png" 
               alt="Background" 
-              className="w-full h-[280px] sm:h-[320px] lg:h-[400px] object-cover"
+              className="w-full h-[350px] sm:h-[380px] lg:h-[400px] object-cover"
             />
             
             
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-4 lg:px-6">
+            <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-4 lg:px-6">
               <div className="text-center max-w-lg mx-auto">
                 {/* Logo */}
-                <div className="mb-4">
+                <div className="mb-6 sm:mb-4">
                   <img 
                     src="/images/Group 1171276407.png" 
                     alt="Logo" 
-                    className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 mx-auto"
+                    className="w-10 h-10 sm:w-10 sm:h-10 lg:w-12 lg:h-12 mx-auto"
                   />
                 </div>
                 
                 {/* Main Text - Exact Figma layout and specifications */}
-                <div className="mb-6 max-w-full lg:w-[593px] lg:h-[96px] px-4 lg:px-0">
-                  <h2 className="text-white text-center text-[18px] sm:text-[24px] md:text-[32px] lg:text-[42px] leading-tight" style={{ 
+                <div className="mb-8 sm:mb-6 max-w-full lg:w-[593px] lg:h-[96px] px-2 lg:px-0">
+                  <h2 className="text-white text-center text-[20px] sm:text-[24px] md:text-[32px] lg:text-[42px] leading-tight" style={{ 
                     fontFamily: 'Plus Jakarta Sans',
                     fontWeight: 500,
                     letterSpacing: '0%',
@@ -39,7 +39,7 @@ export default function PromotionalBanner() {
                 </div>
                 
                 {/* CTA Button - Orange color as per design */}
-                <button className="text-white font-semibold px-6 py-2 sm:px-7 sm:py-2.5 lg:px-8 lg:py-3 rounded-lg text-sm sm:text-base lg:text-base transition-all duration-200 hover:scale-105" style={{ backgroundColor: '#F95206', boxShadow: '0 4px 14px rgba(249, 82, 6, 0.3)' }}>
+                <button className="text-white font-semibold px-8 py-3 sm:px-7 sm:py-2.5 lg:px-8 lg:py-3 rounded-lg text-base sm:text-base lg:text-base transition-all duration-200 hover:scale-105" style={{ backgroundColor: '#F95206', boxShadow: '0 4px 14px rgba(249, 82, 6, 0.3)' }}>
                   Get Started Now
                 </button>
               </div>

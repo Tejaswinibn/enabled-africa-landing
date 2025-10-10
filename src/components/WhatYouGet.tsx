@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function WhatYouGet() {
   return (
-    <section id="what-you-get" className="py-8 sm:py-8 lg:py-12 bg-white">
+    <section id="what-you-get" className="py-12 sm:py-8 lg:py-12 bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4 sm:gap-4 lg:gap-6">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center gap-8 sm:gap-4 lg:gap-6">
           {/* Left Column - Image with "What You Get" text overlay */}
           <div className="w-full lg:w-1/2 lg:max-w-lg">
             <div className="relative w-full max-w-xs sm:max-w-sm mx-auto lg:mx-0">
@@ -28,7 +28,7 @@ export default function WhatYouGet() {
           {/* Right Column - Features */}
           <div className="w-full lg:w-1/2 lg:max-w-2xl">
             <div className="max-w-sm sm:max-w-md lg:max-w-xl mx-auto lg:mx-0">
-              <ul className="space-y-5 sm:space-y-6">
+              <ul className="space-y-6 sm:space-y-6">
               {/* Feature 1 */}
               <li className="flex items-start gap-3 sm:gap-4">
                 <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-100 flex items-center justify-center">
@@ -85,7 +85,7 @@ export default function WhatYouGet() {
               </ul>
               
               {/* Call to Action Button - Proper size and alignment */}
-              <button className="mt-8 sm:mt-8 px-8 py-3 rounded-lg text-white font-bold text-base hover:opacity-90 transition-opacity w-fit" style={{ backgroundColor: '#F95206' }}>
+              <button className="mt-10 sm:mt-8 px-8 py-3 rounded-lg text-white font-bold text-base hover:opacity-90 transition-opacity w-fit" style={{ backgroundColor: '#F95206' }}>
                 Create Profile
               </button>
             </div>

@@ -7,8 +7,8 @@ export default function ConnectionSection() {
         {/* Mobile Layout - Stacked */}
         <div className="block md:hidden">
           {/* Mobile Left Text */}
-          <div className="text-center mb-6 px-4">
-            <h2 className="text-[16px] sm:text-[18px] font-semibold leading-tight text-gray-800 mb-3">
+          <div className="text-center mb-8 px-4">
+            <h2 className="text-[18px] sm:text-[20px] font-semibold leading-tight text-gray-800 mb-4">
               Connecting you to the<br />
               best talent across<br />
               Africa
@@ -16,7 +16,7 @@ export default function ConnectionSection() {
           </div>
 
           {/* Mobile Map Container - Fixed positioning like desktop */}
-          <div className="relative h-[350px] sm:h-[380px] mb-6 overflow-hidden">
+          <div className="relative h-[400px] sm:h-[420px] mb-8 overflow-hidden">
             {/* Africa Map - Mobile - Made larger */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
               <Image
@@ -24,7 +24,7 @@ export default function ConnectionSection() {
                 alt="Africa Map"
                 width={400}
                 height={400}
-                className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] object-contain"
+                className="w-[350px] h-[350px] sm:w-[380px] sm:h-[380px] object-contain"
                 priority
               />
             </div>
@@ -94,8 +94,8 @@ export default function ConnectionSection() {
           </div>
 
           {/* Mobile Right Text - Formatted in exactly 5 lines */}
-          <div className="text-center px-4">
-            <p className="text-gray-700 text-[13px] sm:text-[14px] leading-6 max-w-[95%] mx-auto">
+          <div className="text-center px-4 mt-4">
+            <p className="text-gray-700 text-[14px] sm:text-[15px] leading-7 max-w-[95%] mx-auto">
               We believe that talent exists<br />
               everywhere in Africa, and everyone<br />
               deserves a fair chance to succeed.<br />

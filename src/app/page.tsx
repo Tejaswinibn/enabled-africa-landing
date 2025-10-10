@@ -17,22 +17,22 @@ export default function Home() {
                   <img 
                     src="/images/hero-image.png"
                     alt="Background"
-                    className="w-full h-[400px] md:h-[500px] lg:h-[600px]"
+                    className="w-full h-[450px] md:h-[500px] lg:h-[600px]"
                     style={{ display: 'block', width: '100vw', height: '100%', objectFit: 'cover', objectPosition: 'center', marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}
                   />
                   
                   {/* Text and Button Overlay */}
                   <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 md:px-16 z-20">
-                    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 sm:mb-4 md:mb-6 drop-shadow-sm" style={{ fontFamily: "Plus Jakarta Sans" }}>
+                    <h1 className="text-white text-[28px] sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 sm:mb-4 md:mb-6 drop-shadow-sm" style={{ fontFamily: "Plus Jakarta Sans" }}>
                       Africa&apos;s<br />
                       Largest Talent<br />
                       Bank
                     </h1>
-                    <p className="text-white text-sm sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 sm:mb-5 md:mb-6 lg:mb-7 max-w-xs sm:max-w-lg md:max-w-xl leading-relaxed" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.16)" }}>
+                    <p className="text-white text-[15px] sm:text-base md:text-xl lg:text-2xl font-semibold mb-6 sm:mb-5 md:mb-6 lg:mb-7 max-w-xs sm:max-w-lg md:max-w-xl leading-relaxed" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.16)" }}>
                       Building accessible futures<br />
                       through jobs, skills, and innovation
                     </p>
-                    <button className="text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base md:text-lg shadow-lg w-fit hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
+                    <button className="text-white font-semibold px-8 py-3 sm:px-8 sm:py-3 rounded-lg text-base sm:text-base md:text-lg shadow-lg w-fit hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
                       Get Started Now
                     </button>
                   </div>
