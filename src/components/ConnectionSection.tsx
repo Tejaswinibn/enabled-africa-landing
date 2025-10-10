@@ -7,8 +7,8 @@ export default function ConnectionSection() {
         {/* Mobile Layout - Stacked */}
         <div className="block md:hidden">
           {/* Mobile Left Text */}
-          <div className="text-center mb-8 px-4">
-            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold leading-tight text-gray-800 mb-4">
+          <div className="text-center mb-6 px-4">
+            <h2 className="text-[16px] sm:text-[18px] font-semibold leading-tight text-gray-800 mb-3">
               Connecting you to the<br />
               best talent across<br />
               Africa
@@ -16,7 +16,7 @@ export default function ConnectionSection() {
           </div>
 
           {/* Mobile Map Container - Fixed positioning like desktop */}
-          <div className="relative h-[380px] sm:h-[420px] mb-8 overflow-hidden">
+          <div className="relative h-[350px] sm:h-[380px] mb-6 overflow-hidden">
             {/* Africa Map - Mobile - Made larger */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5">
               <Image
@@ -24,7 +24,7 @@ export default function ConnectionSection() {
                 alt="Africa Map"
                 width={400}
                 height={400}
-                className="w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] object-contain"
+                className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] object-contain"
                 priority
               />
             </div>
@@ -42,64 +42,65 @@ export default function ConnectionSection() {
             </div>
             
             {/* Mobile Profile Images - Removed shadows */}
-            <div className="absolute top-[15%] left-[32%] z-20">
+            <div className="absolute top-[18%] left-[35%] z-20">
               <Image 
                 src="/images/Ellipse 4344.png" 
                 alt="Profile 1" 
                 width={45} 
                 height={45} 
-                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
+                className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[42%] left-[18%] z-20">
+            <div className="absolute top-[45%] left-[20%] z-20">
               <Image 
                 src="/images/Ellipse 4342.png" 
                 alt="Profile 2" 
                 width={45} 
                 height={45} 
-                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
+                className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[65%] left-[52%] z-20">
+            <div className="absolute top-[68%] left-[55%] z-20">
               <Image 
                 src="/images/Ellipse 4345.png" 
                 alt="Profile 3" 
                 width={55} 
                 height={55} 
-                className="h-[55px] w-[55px] sm:h-[60px] sm:w-[60px] rounded-full" 
+                className="h-[50px] w-[50px] sm:h-[55px] sm:w-[55px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[22%] left-[69%] z-20">
+            <div className="absolute top-[25%] left-[72%] z-20">
               <Image 
                 src="/images/Ellipse 4343.png" 
                 alt="Profile 4" 
                 width={45} 
                 height={45} 
-                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
+                className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] rounded-full" 
               />
             </div>
             
-            <div className="absolute top-[58%] left-[28%] z-20">
+            <div className="absolute top-[60%] left-[30%] z-20">
               <Image 
                 src="/images/Ellipse 4346.png" 
                 alt="Profile 5" 
                 width={45} 
                 height={45} 
-                className="h-[45px] w-[45px] sm:h-[50px] sm:w-[50px] rounded-full" 
+                className="h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] rounded-full" 
               />
             </div>
           </div>
 
           {/* Mobile Right Text - Formatted in exactly 5 lines */}
           <div className="text-center px-4">
-            <p className="text-gray-700 text-[15px] leading-7 max-w-[90%] mx-auto">
-              We believe that talent exists everywhere<br />
-              in Africa, and everyone deserves a fair chance<br />
-              to succeed.Whether you&apos;re a job seeker,<br />
-              a student, a professional, or an employer,<br />
+            <p className="text-gray-700 text-[13px] sm:text-[14px] leading-6 max-w-[95%] mx-auto">
+              We believe that talent exists<br />
+              everywhere in Africa, and everyone<br />
+              deserves a fair chance to succeed.<br />
+              Whether you&apos;re a job seeker, a student,<br />
+              a professional, or an employer,<br />
               we make it easier to grow, connect, and thrive.
             </p>
           </div>
