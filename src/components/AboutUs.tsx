@@ -24,7 +24,7 @@ export default function AboutUs() {
               </div>
 
               {/* Text Card - Left-aligned with exact lines */}
-              <div className="lg:order-2 text-center lg:text-left" style={{ maxWidth: '38ch' }}>
+              <div className="lg:order-2 text-center lg:text-left" style={{ maxWidth: '100%' }}>
                 <h2 className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] font-bold text-gray-800 mb-3 sm:mb-4 leading-[1.35]" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, letterSpacing: '0%' }}>
                   About<br />Enabled Africa
                 </h2>
@@ -44,8 +44,8 @@ export default function AboutUs() {
             <div className="space-y-3 sm:space-y-4 lg:space-y-5">
             {/* Vision Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-start">
-              {/* Vision Text - Way more to the right */}
-              <div className="lg:order-1 text-center lg:text-left" style={{ maxWidth: '38ch', marginLeft: '30%' }}>
+              {/* Vision Text - Responsive positioning */}
+              <div className="lg:order-1 text-center lg:text-left lg:ml-[30%]" style={{ maxWidth: '100%' }}>
                 <h3 className="text-[18px] sm:text-[19px] md:text-[20px] font-semibold text-gray-800 mb-3 sm:mb-4 leading-[1.35]" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 600, letterSpacing: '0%' }}>Our Vision</h3>
                 <p className="text-[13px] sm:text-[14px] md:text-[15px] leading-[1.35] text-gray-700 break-words" style={{ fontFamily: 'Plus Jakarta Sans' }}>
                   An Africa where everyone – regardless of background,<br />
@@ -54,8 +54,8 @@ export default function AboutUs() {
                   community.
                 </p>
               </div>
-              {/* Vision Image - moved a bit to left */}
-              <div className="lg:order-2 max-w-sm mx-auto lg:max-w-none" style={{ marginLeft: '-1%' }}>
+              {/* Vision Image - responsive positioning */}
+              <div className="lg:order-2 max-w-sm mx-auto lg:max-w-none lg:ml-[-1%]">
                 <Image
                   src="/images/Subtract.png"
                   alt="Vision image"
@@ -81,7 +81,7 @@ export default function AboutUs() {
                 />
               </div>
               {/* Mission Text - Left-aligned with 3 lines */}
-              <div className="lg:order-2 text-center lg:text-left" style={{ maxWidth: '38ch' }}>
+              <div className="lg:order-2 text-center lg:text-left" style={{ maxWidth: '100%' }}>
                 <h3 className="text-[18px] sm:text-[19px] md:text-[20px] font-semibold text-gray-800 mb-3 sm:mb-4 leading-[1.35]" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 600, letterSpacing: '0%' }}>Our Mission</h3>
                 <p className="text-[13px] sm:text-[14px] md:text-[15px] leading-[1.35] text-gray-700 mb-4 break-words" style={{ fontFamily: 'Plus Jakarta Sans' }}>
                   To unlock Africa&apos;s full potential by making access<br />

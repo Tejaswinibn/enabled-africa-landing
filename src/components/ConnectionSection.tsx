@@ -8,7 +8,7 @@ export default function ConnectionSection() {
         <div className="block md:hidden">
           {/* Mobile Left Text */}
           <div className="text-center mb-8 px-4">
-            <h2 className="text-[20px] sm:text-[22px] font-semibold leading-tight text-gray-800 mb-4">
+            <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold leading-tight text-gray-800 mb-4">
               Connecting you to the<br />
               best talent across<br />
               Africa

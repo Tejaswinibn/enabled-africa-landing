@@ -20,16 +20,14 @@ export default function OurStory() {
         <div className="relative z-10 grid grid-cols-1 items-center gap-y-4 sm:gap-y-6 lg:gap-y-8 lg:grid-cols-12 lg:gap-x-8">
           {/* Left text — force to top-left and closer to image */}
           <div className="lg:col-span-4 self-start lg:-mt-12 lg:pr-6 text-center lg:text-left">
-            <h2 className="text-black mb-6" style={{ 
+            <h2 className="text-black mb-6 text-[28px] sm:text-[36px] md:text-[44px] lg:text-[54px] leading-tight" style={{ 
               fontFamily: 'Plus Jakarta Sans',
               fontWeight: 600,
-              fontSize: '54px',
-              lineHeight: '68.39px',
               letterSpacing: '0%'
             }}>
               Our Story
             </h2>
-            <p className="text-[17px] leading-[25px] text-black max-w-[285px] mx-auto lg:mx-0" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400 }}>
+            <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed text-black max-w-full lg:max-w-[285px] mx-auto lg:mx-0" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400 }}>
               Enabled Africa began in 2025 with<br />
               a simple idea: talent is everywhere,<br />
               but not everyone has access<br />
@@ -45,7 +43,7 @@ export default function OurStory() {
                 alt="Woman working on laptop"
                 width={351}
                 height={473}
-                className="h-[351px] w-[320px] object-cover object-center"
+                className="h-[250px] w-[200px] sm:h-[300px] sm:w-[250px] md:h-[320px] md:w-[280px] lg:h-[351px] lg:w-[320px] object-cover object-center mx-auto"
                 priority
               />
             </div>
@@ -53,7 +51,7 @@ export default function OurStory() {
 
           {/* Right text + CTA — push to bottom-right and away from image */}
           <div className="lg:col-span-4 self-end lg:mt-16 lg:pl-6 text-center lg:text-left">
-            <p className="text-[17px] leading-[25px] text-black mb-4 sm:mb-6" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, whiteSpace: 'pre-line' }}>
+            <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed text-black mb-4 sm:mb-6" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, whiteSpace: 'pre-line' }}>
               {`Today, with partners across the
 continent and globally, we are shaping
 a new future for Africa's workforce

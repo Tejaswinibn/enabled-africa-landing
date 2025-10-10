@@ -6,7 +6,7 @@ export default function WhyEnabledAfrica() {
       <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-[22px] font-semibold text-gray-800">
+          <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold text-gray-800">
             Why EnabledAfrica?
           </h2>
         </div>
@@ -25,10 +25,10 @@ export default function WhyEnabledAfrica() {
                   className="w-13 h-13 mx-auto"
                 />
               </div>
-              <h3 className="text-[16.5px] font-bold text-gray-800 mb-3">
+              <h3 className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16.5px] font-bold text-gray-800 mb-3">
                 Pan-African Reach
               </h3>
-              <p className="text-[12.5px] text-gray-600 leading-relaxed text-center" style={{ maxWidth: '200px', margin: '0 auto' }}>
+              <p className="text-[11px] sm:text-[12px] md:text-[12.5px] lg:text-[12.5px] text-gray-600 leading-relaxed text-center" style={{ maxWidth: '200px', margin: '0 auto' }}>
                 One platform connecting people and employers across the continent.
               </p>
             </div>
@@ -46,10 +46,10 @@ export default function WhyEnabledAfrica() {
                   className="w-30 h-30 mx-auto"
                 />
               </div>
-              <h3 className="text-[16.5px] font-bold mb-3" style={{ color: 'white' }}>
+              <h3 className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16.5px] font-bold mb-3" style={{ color: 'white' }}>
                 <br></br>Skills First Matching
               </h3>
-              <p className="text-[12.5px] leading-relaxed text-center" style={{ color: 'white', maxWidth: '200px', margin: '0 auto' }}>
+              <p className="text-[11px] sm:text-[12px] md:text-[12.5px] lg:text-[12.5px] leading-relaxed text-center" style={{ color: 'white', maxWidth: '200px', margin: '0 auto' }}>
                 Share your strengths and get matched with opportunities that fit you.
               </p>
             </div>
@@ -64,18 +64,16 @@ export default function WhyEnabledAfrica() {
                   alt="Inclusive for All icon" 
                   width={105}
                   height={105}
-                  className="mx-auto"
-                  style={{ width: '150px', height: '50px' }}
+                  className="mx-auto w-[120px] h-[40px] sm:w-[130px] sm:h-[45px] md:w-[140px] md:h-[48px] lg:w-[150px] lg:h-[50px]"
                 />
               </div>
-              <h3 className="text-[16.5px] font-bold text-gray-800 mb-3" style={{ marginTop: '8px' }}>
+              <h3 className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16.5px] font-bold text-gray-800 mb-3" style={{ marginTop: '8px' }}>
                 <br></br>Inclusive for All<br></br>
               </h3>
-              <p className="text-[14px] text-gray-600 text-center" style={{ 
+              <p className="text-[11px] sm:text-[12px] md:text-[12.5px] lg:text-[12.5px] text-gray-600 text-center" style={{ 
                 maxWidth: '200px', 
                 margin: '0 auto',
                 lineHeight: '1.5',
-                fontSize: '12.5px !important',
                 fontFamily: 'Plus Jakarta Sans !important',
                 whiteSpace: 'normal !important'
               }}>
@@ -96,10 +94,10 @@ export default function WhyEnabledAfrica() {
                   className="w-13 h-13 mx-auto"
                 />
               </div>
-              <h3 className="text-[16.5px] font-bold mb-3" style={{ color: 'white' }}>
+              <h3 className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16.5px] font-bold mb-3" style={{ color: 'white' }}>
                 Beyond Jobs
               </h3>
-              <p className="text-[12.5px] leading-relaxed text-center" style={{ color: 'white', maxWidth: '200px', margin: '0 auto' }}>
+              <p className="text-[11px] sm:text-[12px] md:text-[12.5px] lg:text-[12.5px] leading-relaxed text-center" style={{ color: 'white', maxWidth: '200px', margin: '0 auto' }}>
                 We invest in training and innovation programs that support long-term growth.
               </p>
             </div>
