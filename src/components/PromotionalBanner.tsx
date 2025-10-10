@@ -21,17 +21,15 @@ export default function PromotionalBanner() {
                   <img 
                     src="/images/Group 1171276407.png" 
                     alt="Logo" 
-                    className="w-12 h-12 mx-auto"
+                    className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 mx-auto"
                   />
                 </div>
                 
                 {/* Main Text - Exact Figma layout and specifications */}
-                <div className="mb-6" style={{ width: '593px', height: '96px' }}>
-                  <h2 className="text-white text-center" style={{ 
+                <div className="mb-6 max-w-full lg:w-[593px] lg:h-[96px] px-4 lg:px-0">
+                  <h2 className="text-white text-center text-[18px] sm:text-[24px] md:text-[32px] lg:text-[42px] leading-tight" style={{ 
                     fontFamily: 'Plus Jakarta Sans',
                     fontWeight: 500,
-                    fontSize: '42.16px',
-                    lineHeight: '48px',
                     letterSpacing: '0%',
                     color: '#FFFFFF'
                   }}>
@@ -41,7 +39,7 @@ export default function PromotionalBanner() {
                 </div>
                 
                 {/* CTA Button - Orange color as per design */}
-                <button className="text-white font-semibold px-8 py-3 rounded-lg text-base transition-all duration-200 hover:scale-105" style={{ backgroundColor: '#F95206', boxShadow: '0 4px 14px rgba(249, 82, 6, 0.3)' }}>
+                <button className="text-white font-semibold px-6 py-2 sm:px-7 sm:py-2.5 lg:px-8 lg:py-3 rounded-lg text-sm sm:text-base lg:text-base transition-all duration-200 hover:scale-105" style={{ backgroundColor: '#F95206', boxShadow: '0 4px 14px rgba(249, 82, 6, 0.3)' }}>
                   Get Started Now
                 </button>
               </div>

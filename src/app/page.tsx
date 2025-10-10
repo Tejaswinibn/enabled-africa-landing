@@ -23,16 +23,16 @@ export default function Home() {
                   
                   {/* Text and Button Overlay */}
                   <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 md:px-16 z-20">
-                    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 drop-shadow-sm" style={{ fontFamily: "Plus Jakarta Sans" }}>
+                    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 sm:mb-4 md:mb-6 drop-shadow-sm" style={{ fontFamily: "Plus Jakarta Sans" }}>
                       Africa&apos;s<br />
                       Largest Talent<br />
                       Bank
                     </h1>
-                    <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-4 sm:mb-6 lg:mb-7 max-w-xl" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.16)" }}>
+                    <p className="text-white text-sm sm:text-base md:text-xl lg:text-2xl font-semibold mb-4 sm:mb-5 md:mb-6 lg:mb-7 max-w-xs sm:max-w-lg md:max-w-xl leading-relaxed" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.16)" }}>
                       Building accessible futures<br />
                       through jobs, skills, and innovation
                     </p>
-                    <button className="text-white font-semibold px-8 py-3 rounded-lg text-lg shadow-lg w-fit hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
+                    <button className="text-white font-semibold px-6 py-2 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base md:text-lg shadow-lg w-fit hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
                       Get Started Now
                     </button>
                   </div>

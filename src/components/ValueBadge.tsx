@@ -18,7 +18,7 @@ export default function ValueBadge({ children }: { children: React.ReactNode }) 
 export function OurValues() {
   return (
     <section className="py-16 sm:py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-8" style={{ marginLeft: '8%' }}>
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:ml-[8%]">
         {/* GRID: 2 COLUMNS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 items-start">
           
@@ -27,10 +27,9 @@ export function OurValues() {
             {/* ROW 1 - Our Values */}
             <div className="flex flex-col">
               <h2
-                className="font-bold mb-4"
+                className="font-bold mb-4 text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]"
                 style={{
                   fontFamily: "Plus Jakarta Sans",
-                  fontSize: "2rem",
                   fontWeight: 700,
                   color: "#0C1B33",
                 }}
@@ -38,9 +37,9 @@ export function OurValues() {
                 Our Values
               </h2>
               <p
+                className="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]"
                 style={{
                   fontFamily: "Plus Jakarta Sans",
-                  fontSize: "0.9rem",
                   fontWeight: 400,
                   color: "#374151",
                   lineHeight: "1.6",
@@ -61,10 +60,9 @@ export function OurValues() {
               </ValueBadge>
               <div>
                 <h3 
-                  className="font-bold mb-2"
+                  className="font-bold mb-2 text-[14px] sm:text-[15px] md:text-[16px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "16px",
                     fontWeight: 700,
                     color: "#0C1B33",
                   }}
@@ -72,9 +70,9 @@ export function OurValues() {
                   Respect
                 </h3>
                 <p 
+                  className="text-[11px] sm:text-[12px] md:text-[13px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "13px",
                     fontWeight: 400,
                     color: "#374151",
                   }}
@@ -94,10 +92,9 @@ export function OurValues() {
               </ValueBadge>
               <div>
                 <h3 
-                  className="font-bold mb-2"
+                  className="font-bold mb-2 text-[14px] sm:text-[15px] md:text-[16px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "16px",
                     fontWeight: 700,
                     color: "#0C1B33",
                   }}
@@ -105,9 +102,9 @@ export function OurValues() {
                   Trust
                 </h3>
                 <p 
+                  className="text-[11px] sm:text-[12px] md:text-[13px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "13px",
                     fontWeight: 400,
                     color: "#374151",
                   }}
@@ -131,10 +128,9 @@ export function OurValues() {
               </ValueBadge>
               <div>
                 <h3 
-                  className="font-bold mb-2"
+                  className="font-bold mb-2 text-[14px] sm:text-[15px] md:text-[16px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "16px",
                     fontWeight: 700,
                     color: "#0C1B33",
                   }}
@@ -142,9 +138,9 @@ export function OurValues() {
                   Collaboration
                 </h3>
                 <p 
+                  className="text-[11px] sm:text-[12px] md:text-[13px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "13px",
                     fontWeight: 400,
                     color: "#374151",
                   }}
@@ -165,10 +161,9 @@ export function OurValues() {
               </ValueBadge>
               <div>
                 <h3 
-                  className="font-bold mb-2"
+                  className="font-bold mb-2 text-[14px] sm:text-[15px] md:text-[16px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "16px",
                     fontWeight: 700,
                     color: "#0C1B33",
                   }}
@@ -176,9 +171,9 @@ export function OurValues() {
                   Opportunity
                 </h3>
                 <p 
+                  className="text-[11px] sm:text-[12px] md:text-[13px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "13px",
                     fontWeight: 400,
                     color: "#374151",
                   }}
@@ -199,10 +194,9 @@ export function OurValues() {
               </ValueBadge>
               <div>
                 <h3 
-                  className="font-bold mb-2"
+                  className="font-bold mb-2 text-[14px] sm:text-[15px] md:text-[16px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "16px",
                     fontWeight: 700,
                     color: "#0C1B33",
                   }}
@@ -210,9 +204,9 @@ export function OurValues() {
                   Growth
                 </h3>
                 <p 
+                  className="text-[11px] sm:text-[12px] md:text-[13px]"
                   style={{
                     fontFamily: "Plus Jakarta Sans",
-                    fontSize: "13px",
                     fontWeight: 400,
                     color: "#374151",
                   }}
