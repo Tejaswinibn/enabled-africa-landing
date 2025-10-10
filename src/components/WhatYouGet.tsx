@@ -2,27 +2,32 @@ import Image from "next/image";
 
 export default function WhatYouGet() {
   return (
-    <section id="what-you-get" className="py-8 sm:py-12 lg:py-16 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8 lg:gap-12">
-          {/* Left Column - Single Image */}
+    <section id="what-you-get" className="py-6 sm:py-8 lg:py-12 bg-white">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center gap-2 sm:gap-4 lg:gap-6">
+          {/* Left Column - Image with "What You Get" text overlay */}
           <div className="w-full lg:w-1/2 lg:max-w-lg">
             <div className="relative w-full max-w-xs sm:max-w-sm mx-auto lg:mx-0">
               <Image
-                src="/images/39e84348-3948-497e-8d1d-19fce98b26d3.jpeg"
-                alt="What You Get images"
+                src="/images/Group 1171276411.png"
+                alt="What You Get"
                 width={400}
                 height={500}
-                className="w-full h-auto rounded-lg brightness-100 contrast-100"
+                className="w-full h-auto rounded-lg"
                 priority
-                style={{ filter: 'none' }}
               />
+              {/* "What You Get" text overlay positioned on top left of image */}
+              <div className="absolute top-4 left-4 z-10">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black leading-tight" style={{ fontFamily: 'Plus Jakarta Sans' }}>
+                  What<br />You Get
+                </h2>
+              </div>
             </div>
           </div>
 
           {/* Right Column - Features */}
           <div className="w-full lg:w-1/2 lg:max-w-2xl">
-            <div className="max-w-sm sm:max-w-md lg:max-w-lg mx-auto lg:mx-0">
+            <div className="max-w-sm sm:max-w-md lg:max-w-xl mx-auto lg:mx-0">
               <ul className="space-y-4 sm:space-y-6">
               {/* Feature 1 */}
               <li className="flex items-start gap-3 sm:gap-4">
@@ -79,8 +84,8 @@ export default function WhatYouGet() {
               </li>
               </ul>
               
-              {/* Call to Action Button */}
-              <button className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 rounded-lg bg-orange-500 text-white font-semibold text-sm sm:text-base hover:bg-orange-600 transition-colors w-full sm:w-auto">
+              {/* Call to Action Button - Proper size and alignment */}
+              <button className="mt-6 sm:mt-8 px-8 py-3 rounded-lg text-white font-bold text-base hover:opacity-90 transition-opacity w-fit" style={{ backgroundColor: '#F95206' }}>
                 Create Profile
               </button>
             </div>
@@ -100,11 +105,11 @@ export default function WhatYouGet() {
           </p>
         </div>
         
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
             {/* Card 1 - Wide Access */}
             <div 
-              className="p-3 sm:p-4 lg:p-6 rounded-xl text-white relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
+              className="p-6 sm:p-8 rounded-xl text-white relative h-[240px] sm:h-[260px] lg:h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#045F33' }}
             >
               <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
@@ -116,12 +121,12 @@ export default function WhatYouGet() {
                   className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-white">Wide Access</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-white leading-relaxed">Connect with diverse professionals across Africa</p>
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-3 text-white" style={{ fontFamily: 'Plus Jakarta Sans' }}>Wide Access</h3>
+              <p className="text-xs sm:text-sm lg:text-sm text-white" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, lineHeight: '20px', letterSpacing: '0%' }}>Connect with diverse professionals across Africa</p>
             </div>
 
             {/* Card 2 - Image - diverse-multiracial-group */}
-            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
+            <div className="h-[240px] sm:h-[260px] lg:h-[280px] p-1 sm:p-2">
               <Image 
                 src="/images/diverse-multiracial-group-people-giving-high-five-modern-office-teamwork-concept.png" 
                 alt="Team in office" 
@@ -133,8 +138,8 @@ export default function WhatYouGet() {
 
             {/* Card 3 - Faster Hiring */}
             <div 
-              className="p-3 sm:p-4 lg:p-6 rounded-xl text-gray-800 relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
-              style={{ backgroundColor: '#EFC36B' }}
+              className="p-6 sm:p-8 rounded-xl text-gray-800 relative h-[240px] sm:h-[260px] lg:h-[280px] flex flex-col justify-end"
+              style={{ backgroundColor: '#F5D042' }}
             >
               <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
@@ -145,12 +150,12 @@ export default function WhatYouGet() {
                   className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-black">Faster Hiring</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-black leading-relaxed">Get pre-matched with the right candidates, ready to contribute</p>
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-3 text-black" style={{ fontFamily: 'Plus Jakarta Sans' }}>Faster Hiring</h3>
+              <p className="text-xs sm:text-sm lg:text-sm text-black" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, lineHeight: '18px', letterSpacing: '0%', fontSize: 'calc(0.875rem - 1px)' }}>Get pre-matched with the right<br />candidates, ready to contribute</p>
             </div>
 
-            {/* Card 4 - Image - MicrosoftTeams */}
-            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
+            {/* Card 4 - Image - Man in striped shirt */}
+            <div className="h-[240px] sm:h-[260px] lg:h-[280px] p-1 sm:p-2">
               <Image 
                 src="/images/645bd6210b74564994a286d7_MicrosoftTeams-image (1).png" 
                 alt="Man in striped shirt" 
@@ -160,11 +165,11 @@ export default function WhatYouGet() {
               />
             </div>
 
-            {/* Card 5 - Image - istock-2160995080 */}
-            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
+            {/* Card 5 - Image - Man working */}
+            <div className="h-[240px] sm:h-[260px] lg:h-[280px] p-1 sm:p-2">
               <Image 
                 src="/images/istock-2160995080.png" 
-                alt="Team collaboration" 
+                alt="Man working" 
                 width={300}
                 height={280}
                 className="w-full h-full object-cover rounded-xl"
@@ -173,8 +178,8 @@ export default function WhatYouGet() {
 
             {/* Card 6 - Inclusive Made Simple */}
             <div 
-              className="p-3 sm:p-4 lg:p-6 rounded-xl text-gray-800 relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
-              style={{ backgroundColor: '#EFC36B' }}
+              className="p-6 sm:p-8 rounded-xl text-gray-800 relative h-[240px] sm:h-[260px] lg:h-[280px] flex flex-col justify-end"
+              style={{ backgroundColor: '#F5D042' }}
             >
               <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
                 <Image 
@@ -185,15 +190,15 @@ export default function WhatYouGet() {
                   className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-black">Inclusive Made Simple</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-black leading-relaxed">Resources and support for building workplaces where everyone can thrive</p>
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-3 text-black" style={{ fontFamily: 'Plus Jakarta Sans' }}>Inclusive Made Simple</h3>
+              <p className="text-xs sm:text-sm lg:text-sm text-black" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, lineHeight: '20px', letterSpacing: '0%' }}>Resources and support for building workplaces where everyone can thrive</p>
             </div>
 
-            {/* Card 7 - Image - financial-businesswomen */}
-            <div className="min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] p-1 sm:p-2 lg:p-4">
+            {/* Card 7 - Image - Financial businesswomen */}
+            <div className="h-[240px] sm:h-[260px] lg:h-[280px] p-1 sm:p-2">
               <Image 
                 src="/images/financial-businesswomen-analyze-the-graph-of-the-c-2025-02-22-17-12-16-utc.png" 
-                alt="Woman with laptop" 
+                alt="Financial businesswomen" 
                 width={300}
                 height={280}
                 className="w-full h-full object-cover rounded-xl"
@@ -202,7 +207,7 @@ export default function WhatYouGet() {
 
             {/* Card 8 - Long-Term Value */}
             <div 
-              className="p-3 sm:p-4 lg:p-6 rounded-xl text-white relative min-h-[180px] sm:min-h-[200px] lg:min-h-[240px] xl:min-h-[280px] flex flex-col justify-end"
+              className="p-6 sm:p-8 rounded-xl text-white relative h-[240px] sm:h-[260px] lg:h-[280px] flex flex-col justify-end"
               style={{ backgroundColor: '#045F33' }}
             >
               <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
@@ -214,9 +219,10 @@ export default function WhatYouGet() {
                   className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 text-white">Long-Term Value</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-white leading-relaxed">Hiring through EnabledAfrica helps you build engaged, innovative teams</p>
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-3 text-white" style={{ fontFamily: 'Plus Jakarta Sans' }}>Long-Term Value</h3>
+              <p className="text-xs sm:text-sm lg:text-sm text-white" style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 400, lineHeight: '20px', letterSpacing: '0%' }}>Hiring through EnabledAfrica helps you build engaged, innovative teams</p>
             </div>
+
           </div>
         </div>
       </div>

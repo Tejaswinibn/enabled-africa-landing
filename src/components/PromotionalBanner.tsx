@@ -2,36 +2,46 @@ export default function PromotionalBanner() {
   return (
     <>
       {/* Promotional Banner */}
-      <section className="py-6 sm:py-8 lg:py-12">
+      <section className="py-4 sm:py-6 lg:py-8">
         <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
-          <div className="relative rounded-xl overflow-hidden shadow-lg">
-            {/* Background Image */}
+          <div className="relative rounded-xl overflow-hidden shadow-xl">
+            {/* Background Image - No dark overlay as per Figma */}
             <img 
               src="/images/banner-background.png" 
               alt="Background" 
-              className="w-full h-[200px] sm:h-[230px] lg:h-[280px] object-cover"
+              className="w-full h-[280px] sm:h-[320px] lg:h-[400px] object-cover"
             />
+            
             
             {/* Overlay Content */}
             <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-4 lg:px-6">
-              <div className="text-center max-w-sm mx-auto">
+              <div className="text-center max-w-lg mx-auto">
                 {/* Logo */}
-                <div className="mb-2 sm:mb-3 lg:mb-4">
+                <div className="mb-4">
                   <img 
                     src="/images/Group 1171276407.png" 
                     alt="Logo" 
-                    className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 mx-auto"
+                    className="w-12 h-12 mx-auto"
                   />
                 </div>
                 
-                {/* Main Text */}
-                <h2 className="text-sm sm:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-3 lg:mb-4 leading-tight px-2">
-                Join as Talent or Employer<br />
-                and be part of Africa&apos;s future
-                </h2>
+                {/* Main Text - Exact Figma layout and specifications */}
+                <div className="mb-6" style={{ width: '593px', height: '96px' }}>
+                  <h2 className="text-white text-center" style={{ 
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: 500,
+                    fontSize: '42.16px',
+                    lineHeight: '48px',
+                    letterSpacing: '0%',
+                    color: '#FFFFFF'
+                  }}>
+                  Join as Talent or Employer<br />
+                  and be part of Africa&apos;s future
+                  </h2>
+                </div>
                 
-                {/* CTA Button */}
-                <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 lg:py-3 rounded-lg transition-colors shadow-lg text-xs sm:text-sm lg:text-base">
+                {/* CTA Button - Orange color as per design */}
+                <button className="text-white font-semibold px-8 py-3 rounded-lg text-base transition-all duration-200 hover:scale-105" style={{ backgroundColor: '#F95206', boxShadow: '0 4px 14px rgba(249, 82, 6, 0.3)' }}>
                   Get Started Now
                 </button>
               </div>
@@ -41,25 +51,25 @@ export default function PromotionalBanner() {
       </section>
 
       {/* Text Section */}
-      <section className="py-6 sm:py-8 lg:py-10 bg-white">
+      <section className="py-4 sm:py-6 lg:py-8 bg-white">
         <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8 text-center">
-          {/* Colorful Slogan */}
-            <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 lg:mb-5 leading-tight px-2">
-            <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+          {/* Colorful Slogan - Exact design colors */}
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-5 leading-tight px-2" style={{ fontFamily: 'Plus Jakarta Sans' }}>
+            <span style={{ color: '#DC2626' }}>
               Your Skills.
             </span>
             {' '}
-            <span className="bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+            <span style={{ color: '#EA580C' }}>
               Your Future.
             </span>
             {' '}
-            <span className="bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-transparent">
+            <span style={{ color: '#059669' }}>
               Your Africa.
             </span>
           </h1>
           
           {/* Sub-text */}
-          <p className="text-sm sm:text-base lg:text-lg text-gray-700 px-4">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-700 px-4 font-normal" style={{ fontFamily: 'Plus Jakarta Sans' }}>
             Find opportunities that match your potential
           </p>
         </div>

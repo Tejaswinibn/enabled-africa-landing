@@ -31,7 +31,7 @@ export default function Header() {
           <Link href="#" className="text-gray-600 hover:text-orange-500 text-sm font-medium">
             Login
           </Link>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
+          <button className="text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity" style={{ backgroundColor: '#F95206' }}>
             Sign up
           </button>
         </div>
