@@ -27,14 +27,14 @@ export default function PromotionalBanner() {
                 
                 {/* Main Text - Exact Figma layout and specifications */}
                 <div className="mb-8 sm:mb-6 max-w-full lg:w-[593px] lg:h-[96px] px-2 lg:px-0">
-                  <h2 className="text-white text-center text-[20px] sm:text-[24px] md:text-[32px] lg:text-[42px] leading-tight" style={{ 
+                  <h2 className="text-white text-center text-[18px] sm:text-[22px] md:text-[28px] lg:text-[38px] leading-tight" style={{ 
                     fontFamily: 'Plus Jakarta Sans',
                     fontWeight: 500,
                     letterSpacing: '0%',
                     color: '#FFFFFF'
                   }}>
                   Join as Talent or Employer<br />
-                  and be part of Africa&apos;s future
+                  and be part of Africa&apos;s talent
                   </h2>
                 </div>
                 
